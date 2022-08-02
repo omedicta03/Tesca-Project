@@ -1,0 +1,311 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="69da759c-a65a-42eb-98a1-461d9252b23f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Vendor</ID>
+  <Name>Vendor</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1585" scrolltop="-4216" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6509" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Vendor" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3298" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20c000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimVendor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1585</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4216</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="33860bc8-42b4-4dc9-bf06-b3c3a0ca9bd2">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="fd8794fc-3cba-491b-a9ea-7fd18b23faa3">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6b40304b-4df7-429f-b64d-d8cd1ebb620d">
+      <ID>Vendor Sk</ID>
+      <Name>Vendor Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ab389542-7601-4f83-92e7-a551a5897ba6">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d59c59e-ce3f-497f-9b1d-a1e3ac001ebf">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>Vendor_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a0a157c9-2832-47a6-bc25-f986f015aab3">
+          <AttributeID>Vendor No</AttributeID>
+          <Name>Vendor No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f71cab97-35db-44bf-99ff-c2d6f5e0dcc1">
+          <AttributeID>Vendor Name</AttributeID>
+          <Name>Vendor Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3321403b-09ec-42a1-b7b0-a47de0cfbd9f">
+          <AttributeID>Registration No</AttributeID>
+          <Name>Registration No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="233e2caf-70cb-4129-87a4-4df831766887">
+          <AttributeID>Vendor Address</AttributeID>
+          <Name>Vendor Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="938010ff-80a3-40d3-a4de-e9bb8182f04f">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6511e887-32cb-4d4b-8994-a5e373b2735c">
+          <AttributeID>State</AttributeID>
+          <Name>State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2662b4c9-b19b-4a47-b8ae-29b2e3ea2996">
+          <AttributeID>Effective Date</AttributeID>
+          <Name>Effective Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a361e70-f679-48f3-8407-4e60b29f6ba3">
+          <AttributeID>Effective End Date</AttributeID>
+          <Name>Effective End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="713facfe-c340-47df-bf6d-d1d639dab4ef">
+      <ID>Vendor No</ID>
+      <Name>Vendor No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a187a5e-5c26-4907-a83e-a1a47947d357">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49dd74a8-5ac8-4bae-a82d-3a9fcf741663">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>vendorNo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ba3775ee-65b7-450d-933c-4d6574e0a2c3">
+      <ID>Vendor Name</ID>
+      <Name>Vendor Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="793f3181-8b9d-4b49-a7cf-c05a1bdd439f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03ab1deb-3422-4650-a830-0af478307a02">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>VendorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88ae4d19-3a11-4c4e-8388-27a4a31d9e03">
+      <ID>Registration No</ID>
+      <Name>Registration No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0cb6fd0-896c-492c-9933-80dcaae2e790">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80bd063f-659c-46e3-b1c0-784d312acdba">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>RegistrationNo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79516195-bbb8-4a19-9f9f-c191edd71a87">
+      <ID>Vendor Address</ID>
+      <Name>Vendor Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f87331fe-0bb1-4304-bb89-11a7cc33cd78">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6915f3a4-c84e-42b5-93a8-7a522bbf2b7f">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>VendorAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5453a77-013f-462b-b204-4d5d8a211626">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e08e905-b50b-4217-bd3b-e87b03a8c6de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50403edb-05be-44b5-9468-c44fe007d395">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1532365c-84d5-4bd3-87be-0edb61e2b332">
+      <ID>State</ID>
+      <Name>State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e787bdf3-ce37-491f-b753-1475ce78ade7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90ee7c27-e3fb-4545-8f17-c3df6aebf2d5">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>State</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e30e6c2-696c-4622-ba88-32a659fb043e">
+      <ID>Effective Date</ID>
+      <Name>Effective Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8edd98f4-638a-45a4-8f98-fba747c580d0">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3472ee9a-33a6-4f8f-b85c-931b0f70c000">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>EffectiveDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ef0146a-a349-4c1c-bfac-daf861570c73">
+      <ID>Effective End Date</ID>
+      <Name>Effective End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01ab4089-1b92-4f4d-95bc-4cd31c0f667f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8efa91a2-b867-4fc4-916c-5a36908574b3">
+            <TableID>TescaEdw_DimVendor</TableID>
+            <ColumnID>EffectiveEndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="52dca336-7689-4a22-85c2-0f1b1e23f83d">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="bbf11d43-7abc-4731-811b-cc5b54fd11ad">
+          <ID>Vendor Sk</ID>
+          <Name>Vendor Sk</Name>
+          <SourceAttributeID>Vendor Sk</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e9eee4aa-ad60-42ac-a7f0-411173fef6c1">
+          <ID>Vendor No</ID>
+          <Name>Vendor No</Name>
+          <SourceAttributeID>Vendor No</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2f9be288-8fee-42db-9025-27e9eafbc48b">
+          <ID>Vendor Name</ID>
+          <Name>Vendor Name</Name>
+          <SourceAttributeID>Vendor Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2b7a4b81-0b09-4ac0-b275-d71b664720b7">
+          <ID>Vendor Address</ID>
+          <Name>Vendor Address</Name>
+          <SourceAttributeID>Vendor Address</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="898c7f95-df59-422e-8bc1-f813abe262cc">
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceAttributeID>City</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fb951220-cb84-47b7-95dd-35ce6ed4abc0">
+          <ID>State</ID>
+          <Name>State</Name>
+          <SourceAttributeID>State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9fba75bd-da6b-4a91-ad9e-ec154f6f230c">
+          <ID>Effective Start Date</ID>
+          <Name>Effective Start Date</Name>
+          <SourceAttributeID>Effective Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="83d89bab-89dc-4331-8ca8-f76d18ed55e8">
+          <ID>Effective End Date</ID>
+          <Name>Effective End Date</Name>
+          <SourceAttributeID>Effective End Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

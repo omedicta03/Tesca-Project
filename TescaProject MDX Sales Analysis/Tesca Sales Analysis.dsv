@@ -1,0 +1,1154 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="39c5bc60-049b-4e2a-93f5-963d73653ba4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tesca EDW</ID>
+  <Name>Tesca Sales Analysis</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="57" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6200" scrolltop="-2349" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="16404" y="13988" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SalesTransaction" left="5787" top="9574" logicalid="22" controlid="1" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_Fact_SalesTransaction" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Order Hour" left="-5540" top="5440" logicalid="23" controlid="2" masterid="0" hint1="0" hint2="0" width="3387" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e20c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_DimHour" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tesca Employee" left="13957" top="7898" logicalid="24" controlid="3" masterid="0" hint1="0" hint2="0" width="3298" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000e20c0000430e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_DimEmployee" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Promotion" left="3150" top="19148" logicalid="25" controlid="4" masterid="0" hint1="0" hint2="0" width="3210" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008a0c0000e20c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_Dimpromotion" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Store" left="-1542" top="16656" logicalid="26" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_Dimstore" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Date" left="7877" top="-1453" logicalid="27" controlid="6" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_dimDate" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Point of Sales Channel" left="8760" top="19148" logicalid="28" controlid="7" masterid="0" hint1="0" hint2="0" width="3422" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00005e0d0000430e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_DimPosChannel" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tesca Customer" left="13604" top="14986" logicalid="29" controlid="8" masterid="0" hint1="0" hint2="0" width="3298" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000e20c0000e20c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_DimCustomer" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Product" left="13127" top="1289" logicalid="30" controlid="9" masterid="0" hint1="0" hint2="0" width="3422" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00005e0d0000430e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TescaEdw_Dimproduct" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="1158" top="12324" logicalid="31" controlid="10" masterid="0" hint1="0" hint2="0" width="4929" height="6381" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_store_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="15" destattachpoint="24" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="1458" y="18305" />
+                    <point x="4587" y="18305" />
+                    <point x="4587" y="12624" />
+                    <point x="5787" y="12624" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9244" top="9324" logicalid="33" controlid="12" masterid="0" hint1="0" hint2="0" width="5013" height="1950" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_employee_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="16" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13957" y="9723" />
+                    <point x="10744" y="9723" />
+                    <point x="10744" y="10974" />
+                    <point x="9544" y="10974" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="4356" top="14274" logicalid="35" controlid="14" masterid="0" hint1="0" hint2="0" width="2509" height="5374" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_promotion_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4755" y="19148" />
+                    <point x="4755" y="16861" />
+                    <point x="6565" y="16861" />
+                    <point x="6565" y="14574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7915" top="14274" logicalid="36" controlid="15" masterid="0" hint1="0" hint2="0" width="2956" height="5374" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_channelid_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="10471" y="19148" />
+                    <point x="10471" y="16861" />
+                    <point x="8215" y="16861" />
+                    <point x="8215" y="14574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9244" top="12324" logicalid="39" controlid="18" masterid="0" hint1="0" hint2="0" width="4660" height="4711" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_customer_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="14" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13604" y="16635" />
+                    <point x="10744" y="16635" />
+                    <point x="10744" y="12624" />
+                    <point x="9544" y="12624" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8465" top="4441" logicalid="42" controlid="21" masterid="0" hint1="0" hint2="0" width="6773" height="5433" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[edw_sales_product_fk]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="5" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="14838" y="4940" />
+                    <point x="14838" y="7287" />
+                    <point x="8765" y="7287" />
+                    <point x="8765" y="9574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Number" left="14845" top="12303" logicalid="44" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="1204" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000b4040000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Transaction Number" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9244" top="11224" logicalid="45" controlid="24" masterid="0" hint1="0" hint2="0" width="6401" height="1579" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Number]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="23" destid="1" sourceattachpoint="0" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="15245" y="12303" />
+                    <point x="15245" y="11903" />
+                    <point x="10410" y="11903" />
+                    <point x="10410" y="11524" />
+                    <point x="9544" y="11524" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Delivery Hour" left="-5373" top="9014" logicalid="46" controlid="25" masterid="0" hint1="0" hint2="0" width="3300" height="3320" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000e40c0000f80c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Delivery Hour" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-2373" top="10124" logicalid="48" controlid="27" masterid="0" hint1="0" hint2="0" width="8460" height="950" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Delivery Hour]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="25" destid="1" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-2073" y="10674" />
+                    <point x="3102" y="10674" />
+                    <point x="3102" y="10424" />
+                    <point x="5787" y="10424" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Hour" left="-4872" top="12780" logicalid="49" controlid="28" masterid="0" hint1="0" hint2="0" width="3300" height="3320" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000e40c0000f80c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Transaction Hour" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-1872" top="11224" logicalid="50" controlid="29" masterid="0" hint1="0" hint2="0" width="7959" height="2516" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Hour]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="28" destid="1" sourceattachpoint="11" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-1572" y="13340" />
+                    <point x="2803" y="13340" />
+                    <point x="2803" y="11524" />
+                    <point x="5787" y="11524" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Order Date" left="2301" top="-1103" logicalid="51" controlid="30" masterid="0" hint1="0" hint2="0" width="4233" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008910000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Order Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="5668" top="3398" logicalid="52" controlid="31" masterid="0" hint1="0" hint2="0" width="1197" height="6476" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Order Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="30" destid="1" sourceattachpoint="13" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="6067" y="3897" />
+                    <point x="6067" y="6735" />
+                    <point x="6565" y="6735" />
+                    <point x="6565" y="9574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Delivery Date" left="-3675" top="-712" logicalid="53" controlid="32" masterid="0" hint1="0" hint2="0" width="4233" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008910000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Delivery Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-308" top="3789" logicalid="54" controlid="33" masterid="0" hint1="0" hint2="0" width="6623" height="6085" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Delivery Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="32" destid="1" sourceattachpoint="13" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="91" y="4288" />
+                    <point x="91" y="6931" />
+                    <point x="6015" y="6931" />
+                    <point x="6015" y="9574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7915" top="3048" logicalid="55" controlid="34" masterid="0" hint1="0" hint2="0" width="881" height="6826" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="1" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="8396" y="3547" />
+                    <point x="8396" y="6560" />
+                    <point x="8215" y="6560" />
+                    <point x="8215" y="9574" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-2453" top="7240" logicalid="56" controlid="35" masterid="0" hint1="0" hint2="0" width="8768" height="2634" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Order Hour]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="17" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="-2153" y="7639" />
+                    <point x="1817" y="7639" />
+                    <point x="1817" y="9574" />
+                    <point x="6015" y="9574" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-6200</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2349</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>85</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Tesca EDW</DataSourceID>
+  <Schema>
+    <xs:schema id="Tesca_x0020_EDW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Tesca_x0020_EDW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4f28d8d2-64d5-4b88-aca2-b03d3e00c784">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="TescaEdw_Fact_SalesTransaction" msprop:design-time-name="1a4b9c11-ddd0-439a-921a-2c97980919f8" msprop:IsLogical="True" msprop:FriendlyName="SalesTransaction" msprop:DbTableName="SalesTransaction" msprop:TableType="View" msprop:QueryDefinition="SELECT sales_sk, TransactionNo, Transdate_Sk, TransHour_sk, orderDate_sk, orderHour_sk, deliveryDate_sk, deliveryHour_sk, Channel_sk, Customer_sk, Employee_sk, Product_sk, Store_sk, Promotion_Sk, Quantity, LineAmount, TaxAmount, LineDiscountAmount, loaddate&#xD;&#xA;FROM   TescaEdw.Fact_SalesTransaction" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="sales_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c9ff30ce-7fa3-435e-886b-d1db21f9393a" msprop:DbColumnName="sales_sk" msprop:FriendlyName="sales_sk" type="xs:long" minOccurs="0" />
+                  <xs:element name="TransactionNo" msprop:design-time-name="8e003e53-c975-4dc1-abca-cbbe419abfaf" msprop:DbColumnName="TransactionNo" msprop:FriendlyName="TransactionNo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Transdate_Sk" msprop:design-time-name="e7d4e34b-d31d-4b08-aafc-c4e31ec92c8c" msprop:DbColumnName="Transdate_Sk" msprop:FriendlyName="Transdate_Sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="TransHour_sk" msprop:design-time-name="c5d4702a-5411-4c19-974f-7408da7981ec" msprop:DbColumnName="TransHour_sk" msprop:FriendlyName="TransHour_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="orderDate_sk" msprop:design-time-name="bd563ff2-2ec7-42fd-a8ce-268dcb7cdba5" msprop:DbColumnName="orderDate_sk" msprop:FriendlyName="orderDate_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="orderHour_sk" msprop:design-time-name="77a5e55d-1d5e-49fa-ba83-bc97fa7af4bf" msprop:DbColumnName="orderHour_sk" msprop:FriendlyName="orderHour_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="deliveryDate_sk" msprop:design-time-name="019c9468-e459-40e5-b041-dca6bd34b89c" msprop:DbColumnName="deliveryDate_sk" msprop:FriendlyName="deliveryDate_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="deliveryHour_sk" msprop:design-time-name="27c9070f-4bbf-484d-a54c-1f56cc8b4dec" msprop:DbColumnName="deliveryHour_sk" msprop:FriendlyName="deliveryHour_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Channel_sk" msprop:design-time-name="6b2f3f0e-16ea-40a2-9ca0-c897e7cd2f92" msprop:DbColumnName="Channel_sk" msprop:FriendlyName="Channel_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Customer_sk" msprop:design-time-name="d0d65062-ec5f-4378-a8a1-95cc126aa09f" msprop:DbColumnName="Customer_sk" msprop:FriendlyName="Customer_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Employee_sk" msprop:design-time-name="631c910a-4bb2-46dd-b3dc-44c1126f50a9" msprop:DbColumnName="Employee_sk" msprop:FriendlyName="Employee_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Product_sk" msprop:design-time-name="29a66864-0966-403c-beba-826280f9eb4e" msprop:DbColumnName="Product_sk" msprop:FriendlyName="Product_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Store_sk" msprop:design-time-name="d33bc7da-3918-4514-804d-838aa524a3a0" msprop:DbColumnName="Store_sk" msprop:FriendlyName="Store_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Promotion_Sk" msprop:design-time-name="6ea266c2-51a3-4e14-be04-285d283ced77" msprop:DbColumnName="Promotion_Sk" msprop:FriendlyName="Promotion_Sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quantity" msprop:design-time-name="b71cb43d-6caf-4ad2-a67f-5c04b433a9f4" msprop:DbColumnName="Quantity" msprop:FriendlyName="Quantity" type="xs:double" minOccurs="0" />
+                  <xs:element name="LineAmount" msprop:design-time-name="96c5fc93-a0a9-4f60-840a-ab91aeafe10d" msprop:DbColumnName="LineAmount" msprop:FriendlyName="LineAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="TaxAmount" msprop:design-time-name="b1074521-ec16-4722-88af-63b88477a01c" msprop:DbColumnName="TaxAmount" msprop:FriendlyName="TaxAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="LineDiscountAmount" msprop:design-time-name="6a0e298c-d778-4445-b29a-967ca8e13b44" msprop:DbColumnName="LineDiscountAmount" msprop:FriendlyName="LineDiscountAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="loaddate" msprop:design-time-name="3a14f463-e470-47a8-ac35-0f19564a099d" msprop:DbColumnName="loaddate" msprop:FriendlyName="loaddate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_DimHour" msprop:design-time-name="b92c01bc-bc64-4c2b-821f-9939109a51ba" msprop:IsLogical="True" msprop:FriendlyName="Order Hour" msprop:DbTableName="Order Hour" msprop:TableType="View" msprop:QueryDefinition="SELECT hour_sk, hour24 AS [Order 24 hour], hour12, hourAP, Periodofday, BusinessHour, EffectivestartDate&#xD;&#xA;FROM   TescaEdw.DimHour" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="hour_sk" msprop:design-time-name="703a3c17-3ca3-4c03-9d5d-1ef9688bd0c8" msprop:DbColumnName="hour_sk" msprop:FriendlyName="hour_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="hour12" msprop:design-time-name="c6e436dc-bfbe-4591-b6fc-00734829dc99" msprop:DbColumnName="hour12" msprop:FriendlyName="hour12" type="xs:int" minOccurs="0" />
+                  <xs:element name="hourAP" msprop:design-time-name="44483002-5929-47fe-8c53-b484684fd97a" msprop:DbColumnName="hourAP" msprop:FriendlyName="hourAP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Periodofday" msprop:design-time-name="e7a016fe-a257-402e-a238-f77d621925ba" msprop:DbColumnName="Periodofday" msprop:FriendlyName="Periodofday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BusinessHour" msprop:design-time-name="6d1535c3-829f-49db-8036-8065abaaaa5e" msprop:DbColumnName="BusinessHour" msprop:FriendlyName="BusinessHour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectivestartDate" msprop:design-time-name="c39f1341-8606-4b45-bc1d-643c03362e15" msprop:DbColumnName="EffectivestartDate" msprop:FriendlyName="EffectivestartDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Order_x0020_24_x0020_hour" msprop:design-time-name="631f1d48-a7d3-4336-a8c6-737dc9f61d45" msprop:DbColumnName="Order 24 hour" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_DimEmployee" msprop:design-time-name="162a2740-0774-4479-adc2-e8e8e2f33949" msprop:IsLogical="True" msprop:FriendlyName="Tesca Employee" msprop:DbTableName="Tesca Employee" msprop:TableType="View" msprop:QueryDefinition="SELECT Employee_sk, EmployeeId, EmployeeNo, EmployeeName, DateofBirth, MaritalStatus, EffectiveDate, EffectiveEndDate&#xD;&#xA;FROM   TescaEdw.DimEmployee" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Employee_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="23a82d36-d14e-482d-972f-7b672cbb4bb1" msprop:DbColumnName="Employee_sk" msprop:FriendlyName="Employee_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmployeeId" msprop:design-time-name="0865d74a-8b10-4f93-894b-92788ebe6348" msprop:DbColumnName="EmployeeId" msprop:FriendlyName="EmployeeId" type="xs:int" minOccurs="0" />
+                  <xs:element name="EmployeeNo" msprop:design-time-name="f63e9f78-f3a2-48fa-9739-11e60a35e3af" msprop:DbColumnName="EmployeeNo" msprop:FriendlyName="EmployeeNo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EmployeeName" msprop:design-time-name="c4c49543-9c96-407a-a2c8-d19f951f1ab8" msprop:DbColumnName="EmployeeName" msprop:FriendlyName="EmployeeName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DateofBirth" msprop:design-time-name="74ec0239-603a-421b-b614-71e5284555d0" msprop:DbColumnName="DateofBirth" msprop:FriendlyName="DateofBirth" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="MaritalStatus" msprop:design-time-name="434d5b48-4f96-4228-9357-30927826ba49" msprop:DbColumnName="MaritalStatus" msprop:FriendlyName="MaritalStatus" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveDate" msprop:design-time-name="40fcf397-b08d-4a69-a41d-e0654afb444c" msprop:DbColumnName="EffectiveDate" msprop:FriendlyName="EffectiveDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="EffectiveEndDate" msprop:design-time-name="dfe279ef-5303-4def-9d6e-9eda40e4082c" msprop:DbColumnName="EffectiveEndDate" msprop:FriendlyName="EffectiveEndDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_Dimpromotion" msprop:design-time-name="d5030ec6-cf73-4dbe-919c-32f8d4386c6f" msprop:IsLogical="True" msprop:FriendlyName="Promotion" msprop:DbTableName="Promotion" msprop:TableType="View" msprop:QueryDefinition="SELECT Promotion_sk, promotionid, StartDate, EndDate, DiscountPercent, promotion, EffectiveDate&#xD;&#xA;FROM   TescaEdw.Dimpromotion" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Promotion_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e47659cd-c918-4b08-857c-c0c108c7bf2c" msprop:DbColumnName="Promotion_sk" msprop:FriendlyName="Promotion_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="promotionid" msprop:design-time-name="8dd2a3e1-0037-4d0e-8895-5e7ff97715e0" msprop:DbColumnName="promotionid" msprop:FriendlyName="promotionid" type="xs:int" minOccurs="0" />
+                  <xs:element name="StartDate" msprop:design-time-name="7eeaf563-f941-49ad-9375-3bcc59786ffb" msprop:DbColumnName="StartDate" msprop:FriendlyName="StartDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="EndDate" msprop:design-time-name="5c1ca36e-3d3a-475d-9592-5ac9abb85ca3" msprop:DbColumnName="EndDate" msprop:FriendlyName="EndDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DiscountPercent" msprop:design-time-name="4b9c639a-8a5a-4f0c-9962-561505ca863b" msprop:DbColumnName="DiscountPercent" msprop:FriendlyName="DiscountPercent" type="xs:double" minOccurs="0" />
+                  <xs:element name="promotion" msprop:design-time-name="b31e007c-772f-4291-9b29-a60dff49eeb5" msprop:DbColumnName="promotion" msprop:FriendlyName="promotion" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveDate" msprop:design-time-name="fa5913ba-e2ae-4c8a-91d0-e3a6acecb3bb" msprop:DbColumnName="EffectiveDate" msprop:FriendlyName="EffectiveDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_Dimstore" msprop:design-time-name="75eb92d2-4b8c-4eae-935b-32a363b0be85" msprop:IsLogical="True" msprop:FriendlyName="Store" msprop:DbTableName="Store" msprop:TableType="View" msprop:QueryDefinition="SELECT store_sk, storeid, storename, streetaddress, city, state, EffectiveDate&#xD;&#xA;FROM   TescaEdw.Dimstore" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="store_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f410c3cc-6704-46ec-857e-6b58ad0499e9" msprop:DbColumnName="store_sk" msprop:FriendlyName="store_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="storeid" msprop:design-time-name="b582b532-c336-4494-8b6a-0f28c6582c4b" msprop:DbColumnName="storeid" msprop:FriendlyName="storeid" type="xs:int" minOccurs="0" />
+                  <xs:element name="storename" msprop:design-time-name="3bab4f1a-f552-4ac9-a4ec-71e6b5a8763c" msprop:DbColumnName="storename" msprop:FriendlyName="storename" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="streetaddress" msprop:design-time-name="5f7ab50b-d88b-47b9-8aba-7def96866760" msprop:DbColumnName="streetaddress" msprop:FriendlyName="streetaddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="city" msprop:design-time-name="e5d12997-fc46-495a-9a67-065fe1035276" msprop:DbColumnName="city" msprop:FriendlyName="city" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="state" msprop:design-time-name="efda922a-ac69-4e63-9ea4-e934762458d4" msprop:DbColumnName="state" msprop:FriendlyName="state" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveDate" msprop:design-time-name="9632dfde-1b8f-4b27-a784-b617aff6140d" msprop:DbColumnName="EffectiveDate" msprop:FriendlyName="EffectiveDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_dimDate" msprop:design-time-name="86107cc8-99dc-4f69-a1f2-2839d60aa132" msprop:IsLogical="True" msprop:FriendlyName="Transaction Date" msprop:DbTableName="Transaction Date" msprop:TableType="View" msprop:QueryDefinition="SELECT datekey, CalendarDate, CalendarYear, CalendarQuarter, CalendarMonth, CalendarEnglishMonth, CalendarIboMonth, CalendarPortugeseMonth, CalendarArabicMonth, CalendarFrenchMonth, calendarDay, CalendarEnglishDay, CalendarIboDay, CalendarPortugeseDay, &#xD;&#xA;             CalendarArabicDay, CalendarFrenchDay, CalendarWeek, CalendarDayofYear, EffectiveStartDate&#xD;&#xA;FROM   TescaEdw.dimDate" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="datekey" msprop:design-time-name="4e9adbf4-cb9e-4b0a-b7f1-e787d6ab4226" msprop:DbColumnName="datekey" msprop:FriendlyName="datekey" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarDate" msprop:design-time-name="0a3c7a5c-ad4d-49c4-b8d5-81a93e068436" msprop:DbColumnName="CalendarDate" msprop:FriendlyName="CalendarDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="CalendarYear" msprop:design-time-name="a6fdb342-4578-47dc-aaf8-81454909ce45" msprop:DbColumnName="CalendarYear" msprop:FriendlyName="CalendarYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarQuarter" msprop:design-time-name="5f0184cf-20c3-4e4c-94c1-1da5e6d3d141" msprop:DbColumnName="CalendarQuarter" msprop:FriendlyName="CalendarQuarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarMonth" msprop:design-time-name="ad39e7db-5e53-475b-8cfd-36c6a9b62354" msprop:DbColumnName="CalendarMonth" msprop:FriendlyName="CalendarMonth" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishMonth" msprop:design-time-name="091a2aef-0329-4f43-a816-1e3ea8529854" msprop:DbColumnName="CalendarEnglishMonth" msprop:FriendlyName="CalendarEnglishMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboMonth" msprop:design-time-name="8e7cb91f-05a2-4bf0-9a1f-cd47128c4e6b" msprop:DbColumnName="CalendarIboMonth" msprop:FriendlyName="CalendarIboMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseMonth" msprop:design-time-name="37486d76-8930-46b5-a762-6ac3ca4bebc3" msprop:DbColumnName="CalendarPortugeseMonth" msprop:FriendlyName="CalendarPortugeseMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicMonth" msprop:design-time-name="a5875f21-5d98-4842-94a0-4a6507001eb4" msprop:DbColumnName="CalendarArabicMonth" msprop:FriendlyName="CalendarArabicMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchMonth" msprop:design-time-name="0cb15091-7552-431e-8618-4665e19f61c2" msprop:DbColumnName="CalendarFrenchMonth" msprop:FriendlyName="CalendarFrenchMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="calendarDay" msprop:design-time-name="6b6bddbf-7429-445d-9e46-1577f7f6e0ca" msprop:DbColumnName="calendarDay" msprop:FriendlyName="calendarDay" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishDay" msprop:design-time-name="1cc516e8-9052-4000-a14d-80d123200840" msprop:DbColumnName="CalendarEnglishDay" msprop:FriendlyName="CalendarEnglishDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboDay" msprop:design-time-name="f7316184-eb4b-4fb4-bb76-db81b4dfdb2d" msprop:DbColumnName="CalendarIboDay" msprop:FriendlyName="CalendarIboDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseDay" msprop:design-time-name="89296008-f99e-41c1-a76d-964f876e10a2" msprop:DbColumnName="CalendarPortugeseDay" msprop:FriendlyName="CalendarPortugeseDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicDay" msprop:design-time-name="66969e8f-c110-42e2-b1e1-a530dfcda9ad" msprop:DbColumnName="CalendarArabicDay" msprop:FriendlyName="CalendarArabicDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchDay" msprop:design-time-name="53a85a14-51ac-47db-afd4-7b0b6111885c" msprop:DbColumnName="CalendarFrenchDay" msprop:FriendlyName="CalendarFrenchDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarWeek" msprop:design-time-name="47c5cc38-4a47-46d6-a846-15688fc22bc0" msprop:DbColumnName="CalendarWeek" msprop:FriendlyName="CalendarWeek" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarDayofYear" msprop:design-time-name="a8df7242-1943-4b7f-8836-70bca12b7c53" msprop:DbColumnName="CalendarDayofYear" msprop:FriendlyName="CalendarDayofYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="EffectiveStartDate" msprop:design-time-name="668a744b-2d5e-415c-a260-877f144ad288" msprop:DbColumnName="EffectiveStartDate" msprop:FriendlyName="EffectiveStartDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_DimPosChannel" msprop:design-time-name="03f9392a-e535-42fb-9cf0-1699b65a8e04" msprop:IsLogical="True" msprop:FriendlyName="Point of Sales Channel" msprop:DbTableName="Point of Sales Channel" msprop:TableType="View" msprop:QueryDefinition="SELECT Channel_SK, ChannelID, ChannelNo, DeviceModel, InstallationDate, serialNo, EffectiveStartDate, EffectiveEndDate&#xD;&#xA;FROM   TescaEdw.DimPosChannel" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Channel_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4ba148f7-a752-494f-b37d-ed8ac7a7cfed" msprop:DbColumnName="Channel_SK" msprop:FriendlyName="Channel_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="ChannelID" msprop:design-time-name="a909c277-e0ec-4ef6-8b34-f77abe46e085" msprop:DbColumnName="ChannelID" msprop:FriendlyName="ChannelID" type="xs:int" minOccurs="0" />
+                  <xs:element name="ChannelNo" msprop:design-time-name="d4619afd-4e77-44d0-a847-0e32efb551e6" msprop:DbColumnName="ChannelNo" msprop:FriendlyName="ChannelNo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DeviceModel" msprop:design-time-name="0e9b1da9-c4c4-4534-91ef-5addf7e730e8" msprop:DbColumnName="DeviceModel" msprop:FriendlyName="DeviceModel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="InstallationDate" msprop:design-time-name="31001d3f-d250-4e56-a7ce-1871d3da3554" msprop:DbColumnName="InstallationDate" msprop:FriendlyName="InstallationDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="serialNo" msprop:design-time-name="7f60c784-06b9-4e17-9911-c31c0f22aafc" msprop:DbColumnName="serialNo" msprop:FriendlyName="serialNo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveStartDate" msprop:design-time-name="edc4f46a-6e42-49c5-a978-af3284182345" msprop:DbColumnName="EffectiveStartDate" msprop:FriendlyName="EffectiveStartDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="EffectiveEndDate" msprop:design-time-name="b67b4fdd-6637-4d3d-9907-766eb5471e36" msprop:DbColumnName="EffectiveEndDate" msprop:FriendlyName="EffectiveEndDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_DimCustomer" msprop:design-time-name="f6b6e5db-e751-4327-ac17-a168fb7b1cf0" msprop:IsLogical="True" msprop:FriendlyName="Tesca Customer" msprop:DbTableName="Tesca Customer" msprop:TableType="View" msprop:QueryDefinition="SELECT Customer_sk, customerid, CustomerName, customeraddress, CityName, State, EffectiveDate&#xD;&#xA;FROM   TescaEdw.DimCustomer" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Customer_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8bcbee82-66a9-45bd-90ea-5e1019069b2e" msprop:DbColumnName="Customer_sk" msprop:FriendlyName="Customer_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="customerid" msprop:design-time-name="4306b6a2-8249-4186-8d25-46d0156f4f41" msprop:DbColumnName="customerid" msprop:FriendlyName="customerid" type="xs:int" minOccurs="0" />
+                  <xs:element name="CustomerName" msprop:design-time-name="db372f10-0be3-4fac-ad7c-dacdba84420b" msprop:DbColumnName="CustomerName" msprop:FriendlyName="CustomerName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="customeraddress" msprop:design-time-name="8dee5e50-6f66-4ad0-8177-35ffedac62c7" msprop:DbColumnName="customeraddress" msprop:FriendlyName="customeraddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CityName" msprop:design-time-name="2f53e48d-c1c0-4ff9-b854-86fab7ed13ad" msprop:DbColumnName="CityName" msprop:FriendlyName="CityName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="State" msprop:design-time-name="3a1b997e-e67e-4fc7-8fef-21d23cf4779c" msprop:DbColumnName="State" msprop:FriendlyName="State" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveDate" msprop:design-time-name="050c20ba-732b-4696-8f5e-b6f97a927484" msprop:DbColumnName="EffectiveDate" msprop:FriendlyName="EffectiveDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TescaEdw_Dimproduct" msprop:design-time-name="68fbaded-13ec-45a3-b5f8-3d5f5eaa5e17" msprop:IsLogical="True" msprop:FriendlyName="Product" msprop:DbTableName="Product" msprop:TableType="View" msprop:QueryDefinition="SELECT product_sk, productid, productname, productnumber, unitprice, department, EffectiveStartDate, EffectiveEndDate&#xD;&#xA;FROM   TescaEdw.Dimproduct" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="product_sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a9a12c16-afd3-4f89-9314-961472bc0999" msprop:DbColumnName="product_sk" msprop:FriendlyName="product_sk" type="xs:int" minOccurs="0" />
+                  <xs:element name="productid" msprop:design-time-name="5e3237e6-c4be-4fc8-90ac-838313d1fda3" msprop:DbColumnName="productid" msprop:FriendlyName="productid" type="xs:int" minOccurs="0" />
+                  <xs:element name="productname" msprop:design-time-name="d64cd34d-9250-461c-8280-be0829356880" msprop:DbColumnName="productname" msprop:FriendlyName="productname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="productnumber" msprop:design-time-name="0bbc00e3-d80d-44a9-8093-09f4b5633bae" msprop:DbColumnName="productnumber" msprop:FriendlyName="productnumber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="unitprice" msprop:design-time-name="687d4008-2d23-48fe-ae24-49df9c0c3be6" msprop:DbColumnName="unitprice" msprop:FriendlyName="unitprice" type="xs:double" minOccurs="0" />
+                  <xs:element name="department" msprop:design-time-name="7eb5d904-f1e9-4f90-9556-500180fbd10d" msprop:DbColumnName="department" msprop:FriendlyName="department" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectiveStartDate" msprop:design-time-name="cf473678-1c98-4dd7-9db4-b7056d2f6f63" msprop:DbColumnName="EffectiveStartDate" msprop:FriendlyName="EffectiveStartDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="EffectiveEndDate" msprop:design-time-name="6ef89002-2af5-4930-a055-51a685c9789b" msprop:DbColumnName="EffectiveEndDate" msprop:FriendlyName="EffectiveEndDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Transaction_x0020_Number" msprop:design-time-name="7004ddd7-c98f-478d-9637-d9b2aaea9cb3" msprop:IsLogical="True" msprop:FriendlyName="Transaction Number" msprop:DbTableName="Transaction Number" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT TransactionNo&#xD;&#xA;FROM   TescaEdw.Fact_SalesTransaction&#xD;&#xA;GROUP BY TransactionNo" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TransactionNo" msprop:design-time-name="b1f5b9b2-713d-4025-b254-2b465b68dbdc" msprop:DbColumnName="TransactionNo" msprop:FriendlyName="TransactionNo">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Delivery_x0020_Hour" msprop:design-time-name="08a64b29-92dd-4302-b2bf-802e06e26aeb" msprop:IsLogical="True" msprop:FriendlyName="Delivery Hour" msprop:DbTableName="Delivery Hour" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT hour_sk, hour24, hour12, hourAP, Periodofday, BusinessHour, EffectivestartDate&#xD;&#xA;FROM   TescaEdw.DimHour" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="hour_sk" msprop:design-time-name="fd45d8ea-1581-482c-99ed-fbfd03c56138" msprop:DbColumnName="hour_sk" msprop:FriendlyName="hour_sk" type="xs:int" />
+                  <xs:element name="hour24" msprop:design-time-name="a9c956a6-5b6a-44b2-9f3d-7b4953ad191a" msprop:DbColumnName="hour24" msprop:FriendlyName="hour24" type="xs:int" minOccurs="0" />
+                  <xs:element name="hour12" msprop:design-time-name="aa271b59-077c-4155-a52e-4350607e3069" msprop:DbColumnName="hour12" msprop:FriendlyName="hour12" type="xs:int" minOccurs="0" />
+                  <xs:element name="hourAP" msprop:design-time-name="5c4b9ab4-fb97-4c63-b62d-cebdc0dcfd2f" msprop:DbColumnName="hourAP" msprop:FriendlyName="hourAP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Periodofday" msprop:design-time-name="80cdc122-7f86-4ece-9e83-42580a320b4b" msprop:DbColumnName="Periodofday" msprop:FriendlyName="Periodofday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BusinessHour" msprop:design-time-name="8fea707d-da6d-48f4-bdef-8e513127376f" msprop:DbColumnName="BusinessHour" msprop:FriendlyName="BusinessHour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectivestartDate" msprop:design-time-name="19bf2f00-258b-4cfe-acfc-9e3053934d1e" msprop:DbColumnName="EffectivestartDate" msprop:FriendlyName="EffectivestartDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Transaction_x0020_Hour" msprop:design-time-name="3ea7b1ba-9a1e-42de-a8a0-40de8f6a67a8" msprop:IsLogical="True" msprop:FriendlyName="Transaction Hour" msprop:DbTableName="Transaction Hour" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT hour_sk, hour24, hour12, hourAP, Periodofday, BusinessHour, EffectivestartDate&#xD;&#xA;FROM   TescaEdw.DimHour" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="hour_sk" msprop:design-time-name="1bf14c1c-6c01-46c7-98bc-42389ed2755e" msprop:DbColumnName="hour_sk" msprop:FriendlyName="hour_sk" type="xs:int" />
+                  <xs:element name="hour24" msprop:design-time-name="0486e9db-ec4f-4bff-8e9a-2e8e1ac001a8" msprop:DbColumnName="hour24" msprop:FriendlyName="hour24" type="xs:int" minOccurs="0" />
+                  <xs:element name="hour12" msprop:design-time-name="06651934-648e-454f-adf9-8c1c28ae1da6" msprop:DbColumnName="hour12" msprop:FriendlyName="hour12" type="xs:int" minOccurs="0" />
+                  <xs:element name="hourAP" msprop:design-time-name="dc003874-f9ec-4c15-bd7c-bbf100920ddb" msprop:DbColumnName="hourAP" msprop:FriendlyName="hourAP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Periodofday" msprop:design-time-name="6ea8d503-2b8d-41b4-af60-babf1a0f001e" msprop:DbColumnName="Periodofday" msprop:FriendlyName="Periodofday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BusinessHour" msprop:design-time-name="7fc644db-981f-465c-9779-bcd116d8c6fa" msprop:DbColumnName="BusinessHour" msprop:FriendlyName="BusinessHour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EffectivestartDate" msprop:design-time-name="cd3834e8-da0f-4fa5-a6ec-57daeaf64e94" msprop:DbColumnName="EffectivestartDate" msprop:FriendlyName="EffectivestartDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Order_x0020_Date" msprop:design-time-name="c8857f4c-6fec-4e1e-93c3-7a7491479bf4" msprop:IsLogical="True" msprop:FriendlyName="Order Date" msprop:DbTableName="Order Date" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT datekey, CalendarDate, CalendarYear, CalendarQuarter, CalendarMonth, CalendarEnglishMonth, CalendarIboMonth, CalendarPortugeseMonth, CalendarArabicMonth, CalendarFrenchMonth, calendarDay, CalendarEnglishDay, CalendarIboDay, CalendarPortugeseDay, &#xD;&#xA;             CalendarArabicDay, CalendarFrenchDay, CalendarWeek, CalendarDayofYear, EffectiveStartDate&#xD;&#xA;FROM   TescaEdw.dimDate" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="datekey" msprop:design-time-name="cf7dc15e-217f-42ac-bdb7-63e9d6bd0d2b" msprop:DbColumnName="datekey" msprop:FriendlyName="datekey" type="xs:int" />
+                  <xs:element name="CalendarDate" msprop:design-time-name="ca44682b-a672-46cc-945d-5b9ee8d9143f" msprop:DbColumnName="CalendarDate" msprop:FriendlyName="CalendarDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="CalendarYear" msprop:design-time-name="ef83344e-e8a2-44b8-a44c-95da20d855ce" msprop:DbColumnName="CalendarYear" msprop:FriendlyName="CalendarYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarQuarter" msprop:design-time-name="281fc58a-13a5-45a5-bacf-e498c8b9aeed" msprop:DbColumnName="CalendarQuarter" msprop:FriendlyName="CalendarQuarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarMonth" msprop:design-time-name="6bf9fe8e-9899-40c2-a738-79fc44d8d3e8" msprop:DbColumnName="CalendarMonth" msprop:FriendlyName="CalendarMonth" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishMonth" msprop:design-time-name="f871b567-3adb-4dee-806a-967f2aa6dd86" msprop:DbColumnName="CalendarEnglishMonth" msprop:FriendlyName="CalendarEnglishMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboMonth" msprop:design-time-name="7e5336b8-d3d9-4696-96c3-be38c891679a" msprop:DbColumnName="CalendarIboMonth" msprop:FriendlyName="CalendarIboMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseMonth" msprop:design-time-name="0f441284-0441-4d8a-a33c-f4ece2ea248f" msprop:DbColumnName="CalendarPortugeseMonth" msprop:FriendlyName="CalendarPortugeseMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicMonth" msprop:design-time-name="0ea949ad-0246-4d58-9101-0b3897d3b12f" msprop:DbColumnName="CalendarArabicMonth" msprop:FriendlyName="CalendarArabicMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchMonth" msprop:design-time-name="738fb6e3-efe8-4110-ae83-65cdf70bc890" msprop:DbColumnName="CalendarFrenchMonth" msprop:FriendlyName="CalendarFrenchMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="calendarDay" msprop:design-time-name="511cff69-9aa8-4a53-a352-52a5b8264997" msprop:DbColumnName="calendarDay" msprop:FriendlyName="calendarDay" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishDay" msprop:design-time-name="5f82d676-25f9-4dcb-8bd3-7617a51a0a28" msprop:DbColumnName="CalendarEnglishDay" msprop:FriendlyName="CalendarEnglishDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboDay" msprop:design-time-name="eff385f0-3227-4d4e-860d-867dada4002a" msprop:DbColumnName="CalendarIboDay" msprop:FriendlyName="CalendarIboDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseDay" msprop:design-time-name="13304e5c-88a8-4a3e-a322-194a5a9d2fb2" msprop:DbColumnName="CalendarPortugeseDay" msprop:FriendlyName="CalendarPortugeseDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicDay" msprop:design-time-name="3111d901-c3fe-4833-8c15-0459aae69451" msprop:DbColumnName="CalendarArabicDay" msprop:FriendlyName="CalendarArabicDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchDay" msprop:design-time-name="78ea4c7f-6675-4242-bac1-2ffd2a57b9d7" msprop:DbColumnName="CalendarFrenchDay" msprop:FriendlyName="CalendarFrenchDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarWeek" msprop:design-time-name="eeb1052d-f5fe-427a-ab3a-46ce1e6943f1" msprop:DbColumnName="CalendarWeek" msprop:FriendlyName="CalendarWeek" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarDayofYear" msprop:design-time-name="6d33b433-765d-48c5-9706-b15b43208bb6" msprop:DbColumnName="CalendarDayofYear" msprop:FriendlyName="CalendarDayofYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="EffectiveStartDate" msprop:design-time-name="18684216-b481-4af7-9af8-6ef5b4bbc363" msprop:DbColumnName="EffectiveStartDate" msprop:FriendlyName="EffectiveStartDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Delivery_x0020_Date" msprop:design-time-name="eb1ff7a6-b4c7-4764-8097-e897111ead01" msprop:IsLogical="True" msprop:FriendlyName="Delivery Date" msprop:DbTableName="Delivery Date" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT datekey, CalendarDate, CalendarYear, CalendarQuarter, CalendarMonth, CalendarEnglishMonth, CalendarIboMonth, CalendarPortugeseMonth, CalendarArabicMonth, CalendarFrenchMonth, calendarDay, CalendarEnglishDay, CalendarIboDay, CalendarPortugeseDay, &#xD;&#xA;             CalendarArabicDay, CalendarFrenchDay, CalendarWeek, CalendarDayofYear, EffectiveStartDate&#xD;&#xA;FROM   TescaEdw.dimDate" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="datekey" msprop:design-time-name="5c60402f-0ea6-46e6-8d62-e1bb601b54f9" msprop:DbColumnName="datekey" msprop:FriendlyName="datekey" type="xs:int" />
+                  <xs:element name="CalendarDate" msprop:design-time-name="da499d0f-9a6a-45fd-b99e-dbe6cca215c8" msprop:DbColumnName="CalendarDate" msprop:FriendlyName="CalendarDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="CalendarYear" msprop:design-time-name="43dc8e7b-2713-4dc5-a3fd-9561d9109183" msprop:DbColumnName="CalendarYear" msprop:FriendlyName="CalendarYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarQuarter" msprop:design-time-name="b6fd179f-55f4-498d-b331-bf493d13f593" msprop:DbColumnName="CalendarQuarter" msprop:FriendlyName="CalendarQuarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarMonth" msprop:design-time-name="ccbe4e08-652f-4624-979e-64a32dfb22ea" msprop:DbColumnName="CalendarMonth" msprop:FriendlyName="CalendarMonth" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishMonth" msprop:design-time-name="374db375-c861-400f-bec3-1e4aff3198a0" msprop:DbColumnName="CalendarEnglishMonth" msprop:FriendlyName="CalendarEnglishMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboMonth" msprop:design-time-name="abc3a57c-769a-41ac-8684-3e4f8bdd4aa6" msprop:DbColumnName="CalendarIboMonth" msprop:FriendlyName="CalendarIboMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseMonth" msprop:design-time-name="4d12c0ce-58a9-454f-bba7-417f35322d20" msprop:DbColumnName="CalendarPortugeseMonth" msprop:FriendlyName="CalendarPortugeseMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicMonth" msprop:design-time-name="ab7aea8f-347d-41df-bca2-1e26df4569da" msprop:DbColumnName="CalendarArabicMonth" msprop:FriendlyName="CalendarArabicMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchMonth" msprop:design-time-name="ee16a408-d9a6-453f-929a-a7b7ceb1f2fe" msprop:DbColumnName="CalendarFrenchMonth" msprop:FriendlyName="CalendarFrenchMonth" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="calendarDay" msprop:design-time-name="e69c0397-bd4b-4e39-a16d-3ef219392867" msprop:DbColumnName="calendarDay" msprop:FriendlyName="calendarDay" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarEnglishDay" msprop:design-time-name="c9d19858-df86-4195-96cd-2add02b10bdb" msprop:DbColumnName="CalendarEnglishDay" msprop:FriendlyName="CalendarEnglishDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarIboDay" msprop:design-time-name="f7890ffa-5e74-4081-8873-e67282f7f475" msprop:DbColumnName="CalendarIboDay" msprop:FriendlyName="CalendarIboDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarPortugeseDay" msprop:design-time-name="febd48e5-cddd-4391-89ad-8a8fcd806624" msprop:DbColumnName="CalendarPortugeseDay" msprop:FriendlyName="CalendarPortugeseDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarArabicDay" msprop:design-time-name="8271d1c3-1143-4ea7-9840-9e3de4e6cb51" msprop:DbColumnName="CalendarArabicDay" msprop:FriendlyName="CalendarArabicDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarFrenchDay" msprop:design-time-name="1336181f-7bdb-4cf3-bf06-925cc4d44445" msprop:DbColumnName="CalendarFrenchDay" msprop:FriendlyName="CalendarFrenchDay" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CalendarWeek" msprop:design-time-name="096793f8-d1cd-48d2-acb1-d2bf25ad1320" msprop:DbColumnName="CalendarWeek" msprop:FriendlyName="CalendarWeek" type="xs:int" minOccurs="0" />
+                  <xs:element name="CalendarDayofYear" msprop:design-time-name="2ab5f0b2-745c-4c3f-9409-066e0b761e99" msprop:DbColumnName="CalendarDayofYear" msprop:FriendlyName="CalendarDayofYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="EffectiveStartDate" msprop:design-time-name="d800e115-5e80-4b81-90cc-18ec711d9966" msprop:DbColumnName="EffectiveStartDate" msprop:FriendlyName="EffectiveStartDate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_Fact_SalesTransaction" />
+          <xs:field xpath="sales_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_DimHour_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_DimHour" />
+          <xs:field xpath="hour_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_DimEmployee_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_DimEmployee" />
+          <xs:field xpath="Employee_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_Dimpromotion_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_Dimpromotion" />
+          <xs:field xpath="Promotion_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_Dimstore_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_Dimstore" />
+          <xs:field xpath="store_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_dimDate_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_dimDate" />
+          <xs:field xpath="datekey" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_DimPosChannel_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_DimPosChannel" />
+          <xs:field xpath="Channel_SK" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_DimCustomer_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_DimCustomer" />
+          <xs:field xpath="Customer_sk" />
+        </xs:unique>
+        <xs:unique name="TescaEdw_Dimproduct_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//TescaEdw_Dimproduct" />
+          <xs:field xpath="product_sk" />
+        </xs:unique>
+        <xs:unique name="Transaction_x0020_Number_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Transaction_x0020_Number" />
+          <xs:field xpath="TransactionNo" />
+        </xs:unique>
+        <xs:unique name="Delivery_x0020_Hour_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Delivery_x0020_Hour" />
+          <xs:field xpath="hour_sk" />
+        </xs:unique>
+        <xs:unique name="Transaction_x0020_Hour_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Transaction_x0020_Hour" />
+          <xs:field xpath="hour_sk" />
+        </xs:unique>
+        <xs:unique name="Order_x0020_Date_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Order_x0020_Date" />
+          <xs:field xpath="datekey" />
+        </xs:unique>
+        <xs:unique name="Delivery_x0020_Date_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Delivery_x0020_Date" />
+          <xs:field xpath="datekey" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="edw_sales_product_fk" msdata:parent="TescaEdw_Dimproduct" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="product_sk" msdata:childkey="Product_sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="edw_sales_customer_fk" msdata:parent="TescaEdw_DimCustomer" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="Customer_sk" msdata:childkey="Customer_sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="edw_sales_channelid_fk" msdata:parent="TescaEdw_DimPosChannel" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="Channel_SK" msdata:childkey="Channel_sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="edw_sales_promotion_fk" msdata:parent="TescaEdw_Dimpromotion" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="Promotion_sk" msdata:childkey="Promotion_Sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="edw_sales_employee_fk" msdata:parent="TescaEdw_DimEmployee" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="Employee_sk" msdata:childkey="Employee_sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="edw_sales_store_fk" msdata:parent="TescaEdw_Dimstore" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="store_sk" msdata:childkey="Store_sk" msprop:IsLogical="True" />
+          <msdata:Relationship name="SalesTransaction-Transaction_x0020_Number" msdata:parent="Transaction_x0020_Number" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="TransactionNo" msdata:childkey="TransactionNo" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Delivery_x0020_Hour" msdata:parent="Delivery_x0020_Hour" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="hour_sk" msdata:childkey="deliveryHour_sk" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Transaction_x0020_Hour" msdata:parent="Transaction_x0020_Hour" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="hour_sk" msdata:childkey="TransHour_sk" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Order_x0020_Date" msdata:parent="Order_x0020_Date" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="datekey" msdata:childkey="orderDate_sk" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Delivery_x0020_Date" msdata:parent="Delivery_x0020_Date" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="datekey" msdata:childkey="deliveryDate_sk" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Transaction_x0020_Date" msdata:parent="TescaEdw_dimDate" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="datekey" msdata:childkey="Transdate_Sk" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="SalesTransaction-Order_x0020_Hour" msdata:parent="TescaEdw_DimHour" msdata:child="TescaEdw_Fact_SalesTransaction" msdata:parentkey="hour_sk" msdata:childkey="orderHour_sk" msprop:IsLogical="True" msprop:Description="" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Tesca_x0020_EDW xmlns="" />
+  </Schema>
+</DataSourceView>

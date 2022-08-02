@@ -1,0 +1,240 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="50012874-ab21-42af-8a7e-4e2863337aa9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Promotion</ID>
+  <Name>Promotion</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1576" scrolltop="-4745" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6403" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Promotion" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3210" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0c0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_Dimpromotion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1576</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4745</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2dd48e66-649d-4edb-b32a-b4ab3fbec0e6">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="529c8cba-499c-4837-a885-c4069d173175">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ad03a4ad-0edd-4dc8-92fd-3e42dbedbff6">
+      <ID>Promotion Sk</ID>
+      <Name>Promotion Sk</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>60</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f8838c2-1f86-4b4d-ba4c-f59acf8e15da">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d75fc4c3-358b-4334-9297-ceaeb060f83c">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>Promotion_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ebaf2498-06b6-45cf-8790-29f36e7ee8b7">
+          <AttributeID>Start Date</AttributeID>
+          <Name>Promotion Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a4958fc8-36c9-46bf-8f0c-b39e95ba4d3c">
+          <AttributeID>End Date</AttributeID>
+          <Name>Promotion End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="47505424-2509-492f-a642-5f54812c5a7b">
+          <AttributeID>Discount Percent</AttributeID>
+          <Name>Discount Percent</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8cd2f519-b669-41fc-bdd6-3af3ebc45954">
+          <AttributeID>Promotion</AttributeID>
+          <Name>Promotion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1f2bf6ee-cbf2-4348-8df7-b1252173365f">
+          <AttributeID>Effective Date</AttributeID>
+          <Name>Effective Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ff2871a-14d2-4971-aa7f-b9fb67fe1ed2">
+      <ID>Start Date</ID>
+      <Name>Promotion Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc5327d3-a976-4f5f-a809-02735d76af6c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3efab2b1-529c-4853-92d5-c580247e0124">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="253c70f4-ce99-4e73-89eb-0327f6b3ddd2">
+      <ID>End Date</ID>
+      <Name>Promotion End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f80d6054-95cd-4ec7-b7ae-e443f2190342">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8a08794-0864-42da-babc-8b5a689fb1a2">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3381a1c2-aa09-4d9c-b392-09684150c733">
+      <ID>Discount Percent</ID>
+      <Name>Discount Percent</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e997432-1272-4a6b-87de-b1f0f1ebb22a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31a79da5-a5ff-42f0-a489-bfb3fe5d310f">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>DiscountPercent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75092f17-464b-4b4a-8823-01af9fe82adb">
+      <ID>Promotion</ID>
+      <Name>Promotion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1661459d-0adf-4b10-91f4-6f5e355d2add">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b175ef80-f13b-42ca-8a18-1bf6dbaecfef">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>promotion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b97a106c-7360-4e19-8882-0a7213cd17e6">
+      <ID>Effective Date</ID>
+      <Name>Effective Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f3bc32af-aef4-4870-84b1-e172bb29aef1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d23d21e-e0ca-4a62-80a7-1f31cbd743a2">
+            <TableID>TescaEdw_Dimpromotion</TableID>
+            <ColumnID>EffectiveDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="5e09dcec-bbb6-451b-80a4-cad0f35b46bc">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="69ab91b3-5035-40ee-a5ac-09e783bdea20">
+          <ID>Promotion Sk</ID>
+          <Name>Promotion Sk</Name>
+          <SourceAttributeID>Promotion Sk</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4dcc9dae-d903-408d-b76f-18972d074227">
+          <ID>Promotion</ID>
+          <Name>Promotion</Name>
+          <SourceAttributeID>Promotion</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6ddace55-37b8-4e22-801d-f967b303001d">
+          <ID>Discount Percent</ID>
+          <Name>Discount Percent</Name>
+          <SourceAttributeID>Discount Percent</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0ef7bbd2-70ca-4855-ab59-f3cd8c1484cc">
+          <ID>Promotion Start Date</ID>
+          <Name>Promotion Start Date</Name>
+          <SourceAttributeID>Start Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8532333a-ad6d-45ef-ae14-aee73e5a7495">
+          <ID>Promotion End Date</ID>
+          <Name>Promotion End Date</Name>
+          <SourceAttributeID>End Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="91ff479d-ef6c-41aa-98fc-b39d5973ec62">
+          <ID>Effective Date</ID>
+          <Name>Effective Date</Name>
+          <SourceAttributeID>Effective Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

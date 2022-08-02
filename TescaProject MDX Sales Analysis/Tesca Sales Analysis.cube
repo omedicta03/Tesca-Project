@@ -1,0 +1,2145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd2ea486-84d4-4c08-9049-6b60777f40e9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tesca Sales Analysis</ID>
+  <Name>Tesca Sales Analysis</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="56" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-132" scrolltop="508" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="14199" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Order Date" left="20" top="26549" logicalid="28" controlid="1" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Order Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Store" left="3496" top="353" logicalid="29" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_Dimstore" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Delivery Hour" left="935" top="7720" logicalid="30" controlid="3" masterid="0" hint1="0" hint2="0" width="3387" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Delivery Hour" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Promotion" left="14972" top="7577" logicalid="31" controlid="4" masterid="0" hint1="0" hint2="0" width="3210" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0c0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_Dimpromotion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SalesTransaction" left="8815" top="12600" logicalid="32" controlid="5" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_Fact_SalesTransaction" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tesca Customer" left="14594" top="353" logicalid="33" controlid="6" masterid="0" hint1="0" hint2="0" width="3298" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20c0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimCustomer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Delivery Date" left="2076" top="11749" logicalid="34" controlid="7" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Delivery Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Product" left="14972" top="18973" logicalid="35" controlid="8" masterid="0" hint1="0" hint2="0" width="3422" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005e0d0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_Dimproduct" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Order Hour" left="17981" top="26549" logicalid="36" controlid="9" masterid="0" hint1="0" hint2="0" width="3387" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimHour" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Number" left="6759" top="26549" logicalid="37" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="1182" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009e040000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Transaction Number" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tesca Employee" left="8896" top="0" logicalid="38" controlid="11" masterid="0" hint1="0" hint2="0" width="3298" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20c0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimEmployee" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Hour" left="14972" top="13275" logicalid="39" controlid="12" masterid="0" hint1="0" hint2="0" width="3387" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Transaction Hour" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Point of Sales Channel" left="12159" top="26549" logicalid="40" controlid="13" masterid="0" hint1="0" hint2="0" width="3422" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005e0d0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimPosChannel" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Date" left="2076" top="19149" logicalid="41" controlid="14" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_dimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1790" top="17300" logicalid="42" controlid="15" masterid="0" hint1="0" hint2="0" width="8103" height="9749" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Order Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="6" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2189" y="26549" />
+              <point x="2189" y="22075" />
+              <point x="9593" y="22075" />
+              <point x="9593" y="17600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4597" top="3152" logicalid="43" controlid="16" masterid="0" hint1="0" hint2="0" width="5296" height="9748" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_store_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="5" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4996" y="3651" />
+              <point x="4996" y="8125" />
+              <point x="9593" y="8125" />
+              <point x="9593" y="12600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4022" top="8970" logicalid="44" controlid="17" masterid="0" hint1="0" hint2="0" width="5093" height="4780" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Delivery Hour]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4322" y="9369" />
+              <point x="7615" y="9369" />
+              <point x="7615" y="13450" />
+              <point x="8815" y="13450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12272" top="8827" logicalid="45" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="4923" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_promotion_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14972" y="9226" />
+              <point x="13772" y="9226" />
+              <point x="13772" y="13450" />
+              <point x="12572" y="13450" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12272" top="16450" logicalid="46" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="4748" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_product_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="5" sourceattachpoint="16" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14972" y="20798" />
+              <point x="13772" y="20798" />
+              <point x="13772" y="16750" />
+              <point x="12572" y="16750" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12043" top="3152" logicalid="47" controlid="20" masterid="0" hint1="0" hint2="0" width="4600" height="9748" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_customer_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="5" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16243" y="3651" />
+              <point x="16243" y="6761" />
+              <point x="12343" y="6761" />
+              <point x="12343" y="12600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10393" top="17300" logicalid="48" controlid="21" masterid="0" hint1="0" hint2="0" width="3877" height="9749" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_channelid_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="5" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13870" y="26549" />
+              <point x="13870" y="22075" />
+              <point x="10693" y="22075" />
+              <point x="10693" y="17600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10393" top="3152" logicalid="49" controlid="22" masterid="0" hint1="0" hint2="0" width="1102" height="9748" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[edw_sales_employee_fk]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="5" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11095" y="3651" />
+              <point x="11095" y="8125" />
+              <point x="10693" y="8125" />
+              <point x="10693" y="12600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7860" top="17300" logicalid="50" controlid="23" masterid="0" hint1="0" hint2="0" width="2583" height="9749" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Number]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="5" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8259" y="26549" />
+              <point x="8259" y="22075" />
+              <point x="10143" y="22075" />
+              <point x="10143" y="17600" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12272" top="14525" logicalid="51" controlid="24" masterid="0" hint1="0" hint2="0" width="3000" height="875" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Hour]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="5" sourceattachpoint="14" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14972" y="14924" />
+              <point x="13772" y="14924" />
+              <point x="13772" y="15100" />
+              <point x="12572" y="15100" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6115" top="13850" logicalid="52" controlid="25" masterid="0" hint1="0" hint2="0" width="3000" height="1550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Delivery Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="5" sourceattachpoint="23" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6415" y="14249" />
+              <point x="7615" y="14249" />
+              <point x="7615" y="15100" />
+              <point x="8815" y="15100" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6115" top="16450" logicalid="53" controlid="26" masterid="0" hint1="0" hint2="0" width="3000" height="5599" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Transaction Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="5" sourceattachpoint="23" destattachpoint="28" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6415" y="21649" />
+              <point x="7615" y="21649" />
+              <point x="7615" y="16750" />
+              <point x="8815" y="16750" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10943" top="17300" logicalid="54" controlid="27" masterid="0" hint1="0" hint2="0" width="9131" height="9749" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SalesTransaction-Order Hour]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="5" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19674" y="26549" />
+              <point x="19674" y="22075" />
+              <point x="11243" y="22075" />
+              <point x="11243" y="17600" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-132</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>508</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="efdd54d7-48fc-4990-9681-cb6ee5b15bbf">
+      <ID>Tesca Customer</ID>
+      <Name>Tesca Customer</Name>
+      <DimensionID>Tesca Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e374bbb-efc7-4bdc-837c-7cb4d25fc7c3">
+          <AttributeID>Customer Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ff980ae-65dd-4cc5-84d5-5aaba4a79ecd">
+          <AttributeID>Customer Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ead1296-73d4-45df-85c3-d829ba8edca7">
+          <AttributeID>Customeraddress</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72372920-7eaf-43e8-9a2d-d1e1fb82159c">
+          <AttributeID>City Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce7ee874-66b3-447b-865d-c72e65fe7117">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e552d18d-4094-483f-b025-2e0c6eb43384">
+          <AttributeID>Effective Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="372e37f0-a11a-4a77-9e54-8097401b903b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="55d86658-298e-41a0-8a53-efb41674b8c9">
+      <ID>Tesca Employee</ID>
+      <Name>Tesca Employee</Name>
+      <DimensionID>Tesca Employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dec7697a-3c03-474d-abbe-07cec39e90d2">
+          <AttributeID>Employee Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66e6ed8b-9050-4ce9-b66a-f114e875f2f3">
+          <AttributeID>Employee No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c63a49a8-4ee6-49cb-8627-3cb94044a378">
+          <AttributeID>Employee Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ce52ca6-1f93-4763-bc9d-62ea457e080b">
+          <AttributeID>Dateof Birth</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e4aea93-c2a7-438c-9a15-88502a12efd8">
+          <AttributeID>Marital Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2632a072-f200-44a2-98a0-9a9c3f5b5946">
+          <AttributeID>Effective Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fa743a6-d98e-4a60-998d-2068f245d156">
+          <AttributeID>Effective End Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="42eee1f0-8526-48db-b5f2-ec4072ea7482">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a838e16a-0a5c-494f-a44a-9f82b585a354">
+      <ID>Transaction Number</ID>
+      <Name>Transaction Number</Name>
+      <DimensionID>Transaction Number</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="93b9daba-f19d-4f3d-9b4d-3fff4dbce7eb">
+          <AttributeID>Transaction No</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="25babab6-9955-421b-922c-05cb0b49c301">
+      <ID>Product</ID>
+      <Name>Product</Name>
+      <DimensionID>Product</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b2b83e36-25c4-4070-9d34-e3eed725e6e0">
+          <AttributeID>Product Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cfe44f61-82d6-4c02-b90b-7359fb206568">
+          <AttributeID>Productname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45d89196-794f-419d-9432-4cf78aa1bc67">
+          <AttributeID>Productnumber</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="772f852c-0682-458f-b66f-3f91f65c8a85">
+          <AttributeID>Unitprice</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56446249-6dfe-4655-a53a-83d37fcded0f">
+          <AttributeID>Department</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="542bcb78-7065-4216-aa12-1c8a3fd2c317">
+          <AttributeID>Effective Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27d09934-5c02-4049-8507-2ce050d63a9a">
+          <AttributeID>Effective End Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c6e433f4-2c74-443f-a03e-055bf6875fc3">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f150707d-d537-42ff-a418-3cf496c2a16c">
+      <ID>Point Of Sales Channel</ID>
+      <Name>Point Of Sales Channel</Name>
+      <DimensionID>Point Of Sales Channel</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="71ddad9a-cf4a-4030-8905-aa013203b95f">
+          <AttributeID>Channel SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46c71db2-e7a8-41f8-a22d-60a4801c07a9">
+          <AttributeID>Channel No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b8eb6a53-7628-477a-85d4-909cb2f26bbf">
+          <AttributeID>Device Model</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2cba705e-efe5-45d2-b86f-711bdd73d0d8">
+          <AttributeID>Installation Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3c7986b8-0b26-4b2c-afc5-074605c631ea">
+          <AttributeID>Serial No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76d76eb0-f5c5-4d21-9812-cdb2e0463bf6">
+          <AttributeID>Effective Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7785792e-ef72-4716-b803-ed49cfb86a9d">
+          <AttributeID>Effective End Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d55bdccb-d19b-4a0e-a736-6a332467e985">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="32e428aa-4fca-4425-ab56-b063584c6841">
+      <ID>Promotion</ID>
+      <Name>Promotion</Name>
+      <DimensionID>Promotion</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="24db1a23-331f-4ad0-967c-73a460bf5963">
+          <AttributeID>Promotion Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d0b8d12-b130-4002-b615-e4f45016bdc1">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bdda1423-6b61-4b70-98e1-929c44a137d3">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e4866ee-747d-486f-b597-cf5838d25cc9">
+          <AttributeID>Discount Percent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b1022bf-60d9-4754-a928-ead4247f4fe3">
+          <AttributeID>Promotion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="518a82ba-83ed-4a61-9ab1-32a7654cc187">
+          <AttributeID>Effective Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8e78214e-70e9-4e9f-87ef-8cd40daff560">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f9401afb-b57c-4c0d-81f9-5a577ce3005e">
+      <ID>Store</ID>
+      <Name>Store</Name>
+      <DimensionID>Store</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f42295be-1abb-4506-823f-099cbd96e7e9">
+          <AttributeID>Store Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b67dd317-4af2-4fdc-bb77-68ece1637bdc">
+          <AttributeID>Storename</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b87e988-a08b-4c16-9053-c88637c5deed">
+          <AttributeID>Streetaddress</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93844b23-0c12-4ada-83a8-ebd59cb694f1">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8856ae8e-9829-4c93-9974-5ba0c89875a1">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="953b52cd-add4-4a9f-bb87-8518b66ea521">
+          <AttributeID>Effective Date</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b5c3fa7f-9598-4c06-abe2-89d3003d8b9b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e8371163-a5c5-4177-b5be-08dce07f28cf">
+      <ID>Delivery Hour</ID>
+      <Name>Delivery Hour</Name>
+      <DimensionID>Delivery Hour</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bad312dd-55c7-402f-b1f8-1ca9ba7bfb1d">
+          <AttributeID>Hour Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f1d9ff17-5b6e-4b6e-ade6-beaa8e4b57a0">
+          <AttributeID>Hour24</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e75bde8c-e6e8-46a6-b74e-166eb9e6ffb1">
+          <AttributeID>Periodofday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d10a8a4-2e3e-4a8c-a04d-1e0bda451b51">
+          <AttributeID>Business Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47004fc0-93b3-4c48-841e-6a049bf0e9f6">
+          <AttributeID>Hour12</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb5349b0-0bdf-4132-8851-bb9801fa50af">
+          <AttributeID>Hour AP</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3956c97b-8420-485f-86c2-5800da9ba9fe">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="dca7f3f6-2fda-483f-8231-fa203c46f04f">
+      <ID>Transaction Hour</ID>
+      <Name>Transaction Hour</Name>
+      <DimensionID>Transaction Hour</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2edf0836-cfd6-4a47-8484-b6a2bfca527d">
+          <AttributeID>Hour Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dfed904e-9f3b-4b13-b6bc-573e1ed03ed2">
+          <AttributeID>Hour24</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="70bf26a7-6f05-4d1c-ae35-c40d92bd72e8">
+          <AttributeID>Hour12</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ce4a15a-7634-467a-97fc-070277911e8d">
+          <AttributeID>Hour AP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b3c6b73-e7d2-4937-a283-4e13e3c163e2">
+          <AttributeID>Periodofday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="07284aa3-0b02-4f8f-aabe-afa6f4b4d004">
+          <AttributeID>Business Hour</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ad5f12af-431a-401d-bc53-7063077094c7">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4f48a8ca-fe16-48bf-a6a8-fc714f1733b2">
+      <ID>Order Date</ID>
+      <Name>Order Date</Name>
+      <DimensionID>Order Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ed575586-20a7-41a5-a235-413f7f6c0b66">
+          <AttributeID>Datekey</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2994f967-e569-415a-8946-8b3f0a8f5b15">
+          <AttributeID>Calendar Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a7aa8a0a-854f-4bc6-a007-4ea0c72bf832">
+          <AttributeID>Calendar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="319f0858-4443-43cf-9332-44f30319c9ad">
+          <AttributeID>Calendar Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c3e121bb-678b-4104-b162-d2ee4c757141">
+          <AttributeID>Calendar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05ac307a-0af3-4ab4-ab16-66de7ab8c91d">
+          <AttributeID>Calendar English Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="33b960f0-b89b-4395-87ed-434b6e85e05f">
+          <AttributeID>Calendar Ibo Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="adbdcad5-557d-4937-9555-80eb5fa6fd49">
+          <AttributeID>Calendar Portugese Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4991e2f-443a-45da-ad24-9858522deb61">
+          <AttributeID>Calendar Arabic Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="929955f6-1ed6-4b77-99bc-e8e8e85c6751">
+          <AttributeID>Calendar French Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bea7c089-85f3-406e-8025-e7e481253f6a">
+          <AttributeID>Calendar Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d3d5a85-139f-4ec7-8cf6-f99d6f3c1996">
+          <AttributeID>Calendar English Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="853a6608-2ef7-4947-be89-d17ff2be9e7c">
+          <AttributeID>Calendar Ibo Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f8d036d-6344-4928-9d6c-cc2b33b4dcdb">
+          <AttributeID>Calendar Portugese Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d61dae82-3dc4-438b-ae81-926ae21e0de6">
+          <AttributeID>Calendar Arabic Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16e908c2-bc8b-44a2-9043-839e37f08b97">
+          <AttributeID>Calendar French Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bfe55fc0-34ca-49a4-85ce-ac9746e1995b">
+          <AttributeID>Calendar Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3aeeb78e-a48c-4784-9420-5f98647a236c">
+          <AttributeID>Calendar Dayof Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="76d0f841-71f9-4d5a-9c86-1f2245ca735f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="3eed3125-6164-4ec4-b41f-9d0a07c21088">
+      <ID>Delivery Date</ID>
+      <Name>Delivery Date</Name>
+      <DimensionID>Delivery Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9e82f191-6f3a-4899-b8c7-eff6fe3fb813">
+          <AttributeID>Datekey</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f737c12-d8bf-4487-9bee-9700c98e51f8">
+          <AttributeID>Calendar Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d5b203d6-c1ee-492c-ac86-62c02c2eaf36">
+          <AttributeID>Calendar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ad3182ea-63a2-435a-bafc-fba3210825c7">
+          <AttributeID>Calendar Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01f98017-06ff-4277-824e-0f68c072a3a9">
+          <AttributeID>Calendar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6696878-6b23-424c-a1f3-5af181beac18">
+          <AttributeID>Calendar English Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a9d4b8f-3b11-4822-a5d7-cb51649b95b1">
+          <AttributeID>Calendar Ibo Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a607532c-9b73-479e-826d-1c84d86ef9ee">
+          <AttributeID>Calendar Portugese Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf4dac2e-d98a-4a16-aa61-b67939954c1c">
+          <AttributeID>Calendar Arabic Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="190557eb-3361-45ee-aefa-23089c5dc615">
+          <AttributeID>Calendar French Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5585b89e-c60c-462d-9f83-63dee1c5a22a">
+          <AttributeID>Calendar Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca9cab44-3800-429a-a7e9-93a4f9397a46">
+          <AttributeID>Calendar English Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a62e2a9-479a-48cc-9f75-651ad9cf1c1a">
+          <AttributeID>Calendar Ibo Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe4287c3-9c67-4e2e-8534-66529f496adf">
+          <AttributeID>Calendar Portugese Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e89efd5-4e03-4bf8-abd2-8b4273f5f558">
+          <AttributeID>Calendar Arabic Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c62a749e-0b5b-4baa-aecb-6e3ce873a6d9">
+          <AttributeID>Calendar French Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eca25cdf-1a4c-4f44-86ec-e112e1ed8c3e">
+          <AttributeID>Calendar Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27825e03-784c-44bf-ae66-3aa1c6c1f5c6">
+          <AttributeID>Calendar Dayof Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8ba62228-0a9f-4ff5-a865-6f3028ceafde">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="408826f6-5d7a-4446-8ecd-79e597b508d7">
+      <ID>Transaction Date</ID>
+      <Name>Transaction Date</Name>
+      <DimensionID>Transaction Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="74dc32bc-cb73-4e08-a0eb-491037ee7f65">
+          <AttributeID>Datekey</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="163c2640-e880-4024-8ece-d3c800fc035f">
+          <AttributeID>Calendar Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d92c773b-ada4-4553-9bcd-be48322fd475">
+          <AttributeID>Calendar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd72c96f-74f1-453d-9190-ec7eabc24a10">
+          <AttributeID>Calendar Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90e4ccbd-9aec-48cb-847d-8cd740ecb72e">
+          <AttributeID>Calendar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5afabac-84bd-4250-a46b-d080e170bcb7">
+          <AttributeID>Calendar English Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="788b7e9c-34e6-4533-a35a-548ffb96c6f6">
+          <AttributeID>Calendar Ibo Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1acbabe6-6869-406e-a259-e43c9c10a003">
+          <AttributeID>Calendar Portugese Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fadbfe46-4160-49da-b875-3a667112eee0">
+          <AttributeID>Calendar Arabic Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b677357-b717-48b2-af36-a759d2fda30f">
+          <AttributeID>Calendar French Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08d0a014-f27f-491a-8b73-0ba52ad323bf">
+          <AttributeID>Calendar Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87b1bc29-aede-42e5-b311-1961d6e71157">
+          <AttributeID>Calendar English Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02879764-3f50-44ec-a10b-61fbfbb26719">
+          <AttributeID>Calendar Ibo Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0581f5b5-ddd6-45b8-aac4-1d278cc3670e">
+          <AttributeID>Calendar Portugese Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fd61e62-3c41-418a-a5a5-d00d173549f8">
+          <AttributeID>Calendar Arabic Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc4be897-71ef-4736-80d7-898c86093624">
+          <AttributeID>Calendar French Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f3047d5e-cec8-4939-b4a8-d9576b13bab9">
+          <AttributeID>Calendar Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8f2c802-a639-42b0-ab49-f58bd4f66c02">
+          <AttributeID>Calendar Dayof Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1397e984-7e41-4346-9d39-74b552cac55f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="37b080c8-fbaa-43d9-aedc-68908d0e14a7">
+      <ID>Order Hour</ID>
+      <Name>Order Hour</Name>
+      <DimensionID>Order Hour</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8ae4a59a-381b-4297-9aae-8e8f61c3bf58">
+          <AttributeID>Hour Sk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca4be617-a93d-4d0d-9ff7-648e21fa5870">
+          <AttributeID>Hour12</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="092f832a-d048-4233-84a4-a7bd6cada2f4">
+          <AttributeID>Hour AP</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8060843a-369b-46f1-8784-c42936ed39ec">
+          <AttributeID>Periodofday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9863cea-6454-4685-a92f-c9b16d870fa3">
+          <AttributeID>Business Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f22335fc-3d75-4f98-8ab8-46d3b29ac635">
+          <AttributeID>Order 24 Hour</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5c88e710-cf6d-4dc7-947b-c41a281e3728">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="b1d8fee9-c863-4658-9c27-a3eafdf9065b">
+      <ID>Perspective</ID>
+      <Name>Sales Admin</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="09d00bf1-d516-4529-9fd2-0f41c3b30280">
+          <CubeDimensionID>Transaction Number</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8b2dd974-c398-4a2b-af28-dab4be7f2c42">
+              <AttributeID>Transaction No</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="60b1bb3c-18fa-4d50-86e2-9ea8b1e4d3bb">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89b3412b-a5f2-40ea-aea2-81c78098e720">
+              <AttributeID>Product Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8dc421b4-ddd2-4e6b-b67a-cdfebb0b00af">
+              <AttributeID>Productname</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="08830779-eda5-4508-9c59-a98c67e58e7b">
+              <AttributeID>Productnumber</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="112e3575-7ee0-4e72-9a55-9e8d3e4ac528">
+              <AttributeID>Unitprice</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d2285378-9192-4c5c-8c92-8ee9cb9fa7b2">
+              <AttributeID>Department</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="95bcbf55-99ef-4912-bcc9-94d3521ebfdb">
+              <AttributeID>Effective Start Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e8a1d85a-a88e-4d4f-9cff-11dff3ddd14f">
+              <AttributeID>Effective End Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="07a9b3c0-2508-4e6c-8eba-0fded8f555fa">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="588fb01d-aee7-47a3-85f3-4bbf08506691">
+          <CubeDimensionID>Point Of Sales Channel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="46c563aa-6f5e-43e8-8e69-55c2980e18ff">
+              <AttributeID>Channel SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c4f1edd3-9f25-429d-8b92-b535484f4072">
+              <AttributeID>Channel No</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1c00e58d-abb8-43ee-a36d-a78858de25b4">
+              <AttributeID>Device Model</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8e5ff141-5e88-43b5-b09d-f32bca939daf">
+              <AttributeID>Effective End Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4ba8c7dc-eea8-471a-ac6c-f1a1e540f5c1">
+              <AttributeID>Serial No</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="43ce12bd-38cc-4e90-a347-dc5b16b9c9fd">
+              <AttributeID>Effective Start Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="489656e3-d721-4e8d-97fb-3196fc7c5bce">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="5b2a34cc-703b-45ee-9c87-bbb76a3ba946">
+          <CubeDimensionID>Promotion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6aef0ec1-6d77-49ac-bc6c-836d74ad4826">
+              <AttributeID>Promotion Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="755c62ea-f466-45a6-857d-bbea5b9947b6">
+              <AttributeID>Start Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="caa1a7c1-597f-47fc-928f-f380d525d473">
+              <AttributeID>End Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4f14d342-f365-4f12-8df4-d23ed14b4829">
+              <AttributeID>Discount Percent</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2bf0ff23-d788-4991-961d-9b4afb7979b4">
+              <AttributeID>Promotion</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="62e7d18f-3741-41a5-b527-5a1dbf85f4e1">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="e6e6fe7e-dc5c-4176-b41c-fddfea161448">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="132e0450-c0d7-48f8-94f0-e83273e15f55">
+          <CubeDimensionID>Store</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="465856ae-4935-4f5e-b5e0-2c63695c6541">
+              <AttributeID>Storename</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="73893135-4383-4f45-a12f-520508689906">
+              <AttributeID>Streetaddress</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2dd0770b-8790-4adf-ad24-0d8e10feb57c">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9b93ef42-3bd2-4500-8b4e-43d04b5b867c">
+              <AttributeID>State</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f6095672-c151-4f6d-8349-9b774f2aba34">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="80103252-5262-4b65-91fc-0e0d811fd4d1">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="d4f8541a-ec01-4e15-bcff-c95a023d4f6f">
+          <CubeDimensionID>Delivery Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a0e92782-be23-4ef8-ab0e-e50212e4637c">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ba846f1d-9db2-474d-b3b5-5abae74db5b2">
+              <AttributeID>Hour24</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d494bce2-72e8-4368-970a-dba303042523">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="57146db8-ea43-444b-af6f-d1abb7d2d869">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="38d0cb8d-37d0-45f3-9e26-3b7c880f79ca">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dff114bc-9233-4a06-8812-bb4d33d82e98">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="d834bf76-f851-4a6c-8f13-8086b4ee3249">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="7968d4b6-a1c3-44d7-824e-a1f6382fede9">
+          <CubeDimensionID>Transaction Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="05a13842-0958-44ff-82ef-da4ef4b0fde2">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b9650834-2c6b-4633-a393-b56e0488ac4b">
+              <AttributeID>Hour24</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1673aafd-9439-4ef2-a6f3-7ecf54e6d011">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="bbdd014e-b137-43b4-a925-1b4677b387d6">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ce7da59a-1963-437d-bfb5-dc32dbd05f80">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="2ed48959-60ad-469c-8b1e-f94c64c04f53">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="ccc57a5f-191d-4ab4-a243-38e93313809c">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="ffc4fe3b-b8bc-4617-bba9-82f4d444deaa">
+          <CubeDimensionID>Transaction Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5ff5756-62bb-43b4-ad08-2036ab7aba54">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4f091d81-358d-44f2-860d-ca8fc22cc7a6">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3f222a32-3ab3-47c4-8b85-30c699a914a9">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f947d25b-69b5-447d-a390-0c2da46abed2">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0bfcb3df-a607-48a9-b83e-b7cf4f015018">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="02bb3c5f-57b2-4eac-89af-6901806a95e4">
+              <AttributeID>Calendar English Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="602fc7e2-5dd7-4669-aae1-c1d44688cd42">
+              <AttributeID>Calendar Ibo Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="deaa4c53-8fde-407c-ae40-af5f48a1a3a9">
+              <AttributeID>Calendar Portugese Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dffc5666-49af-4da1-9010-9102d01e1649">
+              <AttributeID>Calendar Arabic Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="09d06aa7-0c33-410d-855b-064fd4a2fa54">
+              <AttributeID>Calendar French Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="120afeae-f199-4d08-8ff7-2e0a92d28bc3">
+              <AttributeID>Calendar Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1e54a41f-bd35-41b4-b673-986211bf07c1">
+              <AttributeID>Calendar English Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f430dc2a-f1c9-4b0e-b606-b454ff3e9481">
+              <AttributeID>Calendar Ibo Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="76156c41-f230-46b6-8c6b-824af1e74b60">
+              <AttributeID>Calendar Portugese Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8aa3b432-c1fe-485b-be1f-af094c4b18a0">
+              <AttributeID>Calendar Arabic Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="034b20cc-0089-4a1a-b76c-a69ca216dfaf">
+              <AttributeID>Calendar French Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e4a0acf9-7f10-4f06-9586-fd4043a9ec55">
+              <AttributeID>Calendar Week</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5a91934f-d8b0-435f-a0c4-b139e951bf50">
+              <AttributeID>Calendar Dayof Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="37920d92-2fb9-47f0-9211-568976e2d157">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="434e6e1d-bcc8-4bfc-95dc-63c6ec02c8b9">
+          <CubeDimensionID>Order Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4fdc4a4e-5a1c-4b56-935c-9ae3572ed907">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0a58a338-9046-44f6-8b53-030eb3c94d6a">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="03d275b6-1fbe-4074-9d0e-3f54db3085e7">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="11af5300-c810-444a-aedf-3656d9394a68">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="510d9caa-8cc4-4036-9bd7-31f1ec8ef787">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0ccd16b8-fc13-4604-b1ac-ee5d4bb9c50e">
+              <AttributeID>Order 24 Hour</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="76cd8a92-f1ce-4c9e-920b-0362a168b48f">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="b5a4f52f-dd14-4afc-88b2-b9717fc27724">
+          <CubeDimensionID>Tesca Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b1b2256c-ec6a-4c06-b7ad-02cd11634552">
+              <AttributeID>Customer Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="afdfe0f6-2c70-49d8-b1fa-f0d6f9217746">
+              <AttributeID>Customer Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="55216644-1586-4dc4-b365-6e614e9804c8">
+              <AttributeID>Customeraddress</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0e4e343c-b80c-4355-b312-577ad9d96504">
+              <AttributeID>City Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="48ab4440-34f9-4aed-b368-457cc443f3f6">
+              <AttributeID>State</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b3c48535-ce69-4fe6-b4f5-cd9ae04d618c">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="5d7e1f46-01ff-4d86-a789-c8ac40f7b4d3">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="331bc33a-f830-47d4-a77d-40d147e47d6c">
+          <CubeDimensionID>Tesca Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="762f977f-b888-485a-a55e-6089979e0ed5">
+              <AttributeID>Employee Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e2f48f09-a64e-42db-a1f8-0624c947422d">
+              <AttributeID>Employee No</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="ec19667d-c241-4c9b-a0dc-f43f0c356a83">
+          <CubeDimensionID>Delivery Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b0d0618-f81e-4e93-a05b-683f7d30b3b6">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="1882b792-4489-4993-a35e-530fb1e88f22">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="433b610f-1c60-4bf1-a374-925f88b2aec4">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="acfb5de3-378f-482d-b346-25b2cecb39c6">
+          <MeasureGroupID>Sales Transaction</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="4f03fdcf-e2a2-4b5f-8e74-f0635d936234">
+              <MeasureID>Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="df38f0d4-2bfd-4940-9826-66998a1e6cc5">
+              <MeasureID>Line Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="680c1a42-ed4e-4091-8eab-3152416dbad2">
+              <MeasureID>Tax Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="0dd0bc27-d5b1-43a5-b2ae-0c6cb06d753e">
+              <MeasureID>Line Discount Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c5f441d5-c2a1-46f6-94fa-5e562b59fcd8">
+              <MeasureID>Sales Transaction Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="f27f0642-eb52-41a8-b21b-31556c6662ee">
+      <ID>Perspective 1</ID>
+      <Name>Sales person</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="063c8e8b-1348-4ae3-8ce0-457de14fbb93">
+          <CubeDimensionID>Tesca Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="617e28b3-4cee-4f2f-883c-8bc5ec9cffca">
+              <AttributeID>Customer Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8bbbab08-dc1e-4eb6-86a4-0a44e3fb77cf">
+              <AttributeID>Customer Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="38deedb6-dd93-4944-b6f2-83f0b0da7cd2">
+              <AttributeID>Customeraddress</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0560b30d-b7ee-47b3-8fa2-b3eda2004184">
+              <AttributeID>City Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="41156ec5-e2dc-4eca-b64f-0a762947545c">
+              <AttributeID>State</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a87b0848-8571-42b4-a7fc-3d1867b34b6a">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="4f9f1cfc-9f98-477f-89cf-8134592f53a6">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="3adc48fa-3982-4cf0-9a79-ee798bdf4be7">
+          <CubeDimensionID>Transaction Number</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c7019f31-39ec-41b8-b519-429b80dfca5d">
+              <AttributeID>Transaction No</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="cf3d953d-2698-4ff0-b0c4-f5d7ac2a0994">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="12575781-b51a-4a56-8e72-0a42ed39d0d7">
+              <AttributeID>Product Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="667644f5-1b7b-4714-9242-073a1ffea22e">
+              <AttributeID>Productname</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8c4b2059-037d-440d-baa7-46d004cdc327">
+              <AttributeID>Productnumber</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c58e1fcf-4d96-4080-aea7-308f5986cce6">
+              <AttributeID>Unitprice</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b626f847-727a-427d-b53a-c7366870cafe">
+              <AttributeID>Department</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="53972fd5-1f6c-4a31-ac9a-46dc30c23153">
+              <AttributeID>Effective Start Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e8dccf0-b591-453e-baab-e9d10ebdf028">
+              <AttributeID>Effective End Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="19c66f26-2f0c-49d1-afc1-e4baa4a07a64">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="fac3ed96-1f22-4cd4-9d18-e2fb6b01cd96">
+          <CubeDimensionID>Point Of Sales Channel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fcdbcdd1-1826-4307-827f-8308c1f5df33">
+              <AttributeID>Channel SK</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a35d9453-bfb8-4498-aae7-d19d2fdbf19c">
+              <AttributeID>Channel No</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b7a6f56-bfb4-4245-a636-eda2146ae55d">
+              <AttributeID>Device Model</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="bd21b4be-69b1-4895-988d-c486eaf04adf">
+              <AttributeID>Installation Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d11a325b-5cc9-44f9-98fd-4ad5699631de">
+              <AttributeID>Serial No</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="309df5a8-76e8-4bae-92dc-516ad731663c">
+              <AttributeID>Effective Start Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7dae40f5-a4aa-4f1a-8efe-791afc35eaf4">
+              <AttributeID>Effective End Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="8d4090fa-c4f5-40f0-8e3c-423af4d8abe1">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="32d649ec-ab49-4bca-ac85-d8b30e4ba25f">
+          <CubeDimensionID>Promotion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e8195c11-c768-458a-9be5-b39bfb8536c2">
+              <AttributeID>Promotion Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="933ac293-b53c-4967-bfc1-5c9705424490">
+              <AttributeID>Start Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b93c182f-3dae-4c83-ad57-2395594f9420">
+              <AttributeID>End Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5f631f01-825c-4654-84ef-a32150b36825">
+              <AttributeID>Discount Percent</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="71b52761-c811-4dc9-bbe5-249c96d2fc62">
+              <AttributeID>Promotion</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3243d6b9-53f2-4b57-ac10-aada0d4095b8">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="969329ae-1ace-41a5-bb78-16939157b386">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="35f26ce5-8d55-4fdf-b747-11e4ea3869d3">
+          <CubeDimensionID>Store</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6337c4c4-e3dd-440c-a1d7-dbd67b3997ac">
+              <AttributeID>Store Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d6d8c59a-102a-499e-b907-30104c03e534">
+              <AttributeID>Storename</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="928364f4-6554-41b8-b947-eb31d62f3d7c">
+              <AttributeID>Streetaddress</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b4d312c2-5851-4a50-914a-5339c16b157f">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b8dfeb7c-2de5-4085-b3cc-114d910824d6">
+              <AttributeID>State</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="863ff929-19c4-4164-b9fd-1f74885d625c">
+              <AttributeID>Effective Date</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="a46a77e8-b32b-4ad6-82f7-67dc8b150160">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="05442db2-da19-4da0-9846-2de02c3ee5f3">
+          <CubeDimensionID>Delivery Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ea4bbbb0-5eed-4eb8-b127-6ce539cdf6f9">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ad30b67a-b061-41f7-92fe-96d33f7006f3">
+              <AttributeID>Hour24</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8809a220-403c-4162-b944-9861997ded75">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0bfa21da-29a3-4367-8849-f12549f306bd">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3e57702b-759d-4c9c-ae02-34a640bebb54">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="32e07f95-8b8b-4350-9816-8ce7e09ed5fc">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="7990867b-759f-44ed-a9aa-db512edb0b79">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="ef8b408f-acce-4660-a341-fa75677a0701">
+          <CubeDimensionID>Transaction Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2e535dc9-591b-4656-ae4f-997553c2461c">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ce305d47-c68c-4c95-adb2-c128397aa5e3">
+              <AttributeID>Hour24</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b6ca17be-865c-4320-b67c-fbd65065cc58">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dc2433be-6518-49a5-ac5a-130ab6724bf1">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="70a9f6dc-d429-4065-8e38-b0c1ab184275">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="67921e35-b543-40ac-8e27-117014bcc11f">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="6981727b-a067-42cd-84aa-0a92ad520546">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="38dff7e2-a58b-4e68-a539-48d17550e370">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03298a82-8530-4951-9e52-2a093f29155c">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c4e08079-2628-4ab1-9a5b-ac828cbaedb4">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e366561f-fb37-4b90-b72e-156c88c09a39">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3030a2b2-b638-4d5a-a884-06ef61c1ea9f">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d3bf7c96-b880-49b5-a39b-5678267fde8a">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a1d647d1-cb8a-4d45-9c9a-70d42069f9df">
+              <AttributeID>Calendar English Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="68e502fd-d53f-41a5-aab5-44d85760448d">
+              <AttributeID>Calendar Ibo Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6f78c5cc-d6bb-49f3-9892-d32740b2d73d">
+              <AttributeID>Calendar Portugese Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5de55cd7-d223-4b0a-b7a8-53660f1239cc">
+              <AttributeID>Calendar Arabic Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b6ce3be0-5f1d-4b4d-9bb2-cfb685c55b58">
+              <AttributeID>Calendar French Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b090fc88-7db2-44dd-8f88-c8991b7a8295">
+              <AttributeID>Calendar Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9d741a53-6c34-448c-bbe3-fd362fc1c368">
+              <AttributeID>Calendar English Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c499ad5-6532-4f79-9a25-b4ca8e167d80">
+              <AttributeID>Calendar Ibo Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7c365104-f17d-4318-8e9f-fd43fee27ed7">
+              <AttributeID>Calendar Portugese Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4d8ffd90-cf3c-4e51-bfe5-b00c81bd6745">
+              <AttributeID>Calendar Arabic Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e9b3aa74-f2fe-4fa3-89e7-287f64940e94">
+              <AttributeID>Calendar French Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d0dd9526-d599-4c70-906e-d96a443cb2f4">
+              <AttributeID>Calendar Week</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1226ba65-a683-4e05-8b55-c9fed2733a92">
+              <AttributeID>Calendar Dayof Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="1a59b3de-5005-49af-9631-a64d50035eb0">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="a67a0354-23a0-42f1-b92c-79d05f589a0a">
+          <CubeDimensionID>Delivery Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cb4fe794-36ac-4c7c-a90d-cc03bdf4a80e">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="27114805-6225-4112-a00c-7a67f2fe6757">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="fa9645b1-25b8-4e37-840a-645e20cf7a71">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="8192f2b4-8526-4739-a4c9-69983dc99e27">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f30be75f-f985-40c2-97ab-7af2f6c15732">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04d8f860-4ca2-4664-8103-f7b1fe4da56b">
+              <AttributeID>Calendar English Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9c6ee79e-ceee-408f-90ce-e91b3e0c744b">
+              <AttributeID>Calendar Ibo Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="84f0ec48-f071-4e82-a99d-23de78509a03">
+              <AttributeID>Calendar Portugese Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a6b76e6b-504d-40c5-b08d-e09318c9a58d">
+              <AttributeID>Calendar Arabic Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5af5dbb1-0119-44ae-8bcd-59f411ca8377">
+              <AttributeID>Calendar French Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5ab67498-7c4b-4f76-865d-3ff94d97d500">
+              <AttributeID>Calendar Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c8f8ff69-1aa3-4313-9e8c-a94c2c1c9c2e">
+              <AttributeID>Calendar English Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1d2f6d8a-67ff-4e50-b99f-19025f656ab7">
+              <AttributeID>Calendar Ibo Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="528e3ec6-4631-4ade-8fcc-b1e4288e364a">
+              <AttributeID>Calendar Portugese Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="80e8cde0-6713-46ea-8a03-16e4b7730bc7">
+              <AttributeID>Calendar Arabic Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d5eac55d-7ad6-4ba9-9f8a-bcd198ac19a0">
+              <AttributeID>Calendar French Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="23a7fbd7-6f53-4eeb-ab61-f9a3824a8877">
+              <AttributeID>Calendar Week</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7ce9e03c-ba29-4dee-9002-dc3174c6f7a5">
+              <AttributeID>Calendar Dayof Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="3913c587-e356-4059-985b-75dd525d5f8f">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="372c2d6d-456c-400f-91c6-2437063c41af">
+          <CubeDimensionID>Transaction Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5e29d13f-6264-44ba-8121-3ce3ea7439b5">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0a7036ec-c61d-416f-8852-6b660dd89a9c">
+              <AttributeID>Calendar Date</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b67f853b-a858-4f03-9fc3-a3022512cc8e">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="768bc3a5-3f04-47ac-b23c-2624b4e22d46">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="22601c18-4d68-4230-930a-eade0b4a0476">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="359f456a-9ccb-40d9-81dc-d0acb5d85868">
+              <AttributeID>Calendar English Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="de5e91a6-4e6d-4376-93f7-bf67f07b6574">
+              <AttributeID>Calendar Ibo Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="a81988fb-c8aa-4d68-80c0-bcb336496ed2">
+              <AttributeID>Calendar Portugese Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ad030d5c-8437-4104-b43a-789a21847e5d">
+              <AttributeID>Calendar Arabic Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="cc166b31-0178-4354-a0a1-cba38db17e17">
+              <AttributeID>Calendar French Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f36b3c46-717c-47e1-a76b-131e7c42e7a3">
+              <AttributeID>Calendar Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="72e284e5-a9fa-4cbc-857b-d6ef396492b6">
+              <AttributeID>Calendar English Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f3f62528-993d-497f-9e9f-a6bc07d8475b">
+              <AttributeID>Calendar Ibo Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b073d58-fc09-4ac6-8582-36d37b62f9c0">
+              <AttributeID>Calendar Portugese Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dcbd00e5-d4a2-4c39-bf6b-6f9ea1c371de">
+              <AttributeID>Calendar Arabic Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6211ff03-f653-410c-8651-1cb99d263b30">
+              <AttributeID>Calendar French Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4ee02542-1ed6-4e25-beae-f48ad2f573f9">
+              <AttributeID>Calendar Week</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e73aa9c0-33f6-4ac3-968d-ad5525245e52">
+              <AttributeID>Calendar Dayof Year</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="9101fa4b-b443-4696-8e18-d3aab0e9dba5">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="1a56f330-9cfe-4a81-a2da-a400135cb060">
+          <CubeDimensionID>Order Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="238532db-f4c6-4752-9c8a-4b29494768bb">
+              <AttributeID>Hour Sk</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d9d64e0-ae1e-44b5-a273-4dd37213518d">
+              <AttributeID>Hour12</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="cf3ddd59-66d3-4afa-8984-bc9834e9cb77">
+              <AttributeID>Hour AP</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="dead6a0e-ee31-4a4b-94bd-5fa66c61073e">
+              <AttributeID>Periodofday</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ab3f443f-74ae-4348-a333-2c39d904b0f2">
+              <AttributeID>Business Hour</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c8195964-d003-4edc-a480-febd0e272ea4">
+              <AttributeID>Order 24 Hour</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="dfb0fcd6-5507-4e88-99e5-52d845517d02">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="c6d91d41-09c9-48b6-b7b4-fc69152522bd">
+          <CubeDimensionID>Tesca Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="177f51cf-1b32-4d7e-9e6c-ecc3a44087da">
+              <AttributeID>Employee Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="571cb174-7cd4-4f79-8f56-c9217f18c849">
+          <MeasureGroupID>Sales Transaction</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="ec1b72be-c7a7-4973-9f5f-83e5af54da92">
+              <MeasureID>Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d59707f3-80e6-49ae-b11d-da2f24cf2da4">
+              <MeasureID>Line Amount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="0352a30e-1920-43a6-ae91-c0e4b758265e">
+              <MeasureID>Sales Transaction Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+  </Perspectives>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="e95c1b73-0232-465d-af1c-27d99d652ba8">
+      <ID>Sales Transaction</ID>
+      <Name>Sales Transaction</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0971e39c-28a8-4e52-ad32-52e754911aa1">
+          <ID>Quantity</ID>
+          <Name>Quantity</Name>
+          <Source dwd:design-time-name="398770ae-cd5b-4696-9c22-1d6411ddde67">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="53daeb64-b5a4-433a-bca3-cf104c4409c2">
+              <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+              <ColumnID>Quantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5caed0d9-65ce-4754-844c-312a962355aa">
+          <ID>Line Amount</ID>
+          <Name>Line Amount</Name>
+          <Source dwd:design-time-name="1db6c8d7-26f0-48be-90a4-31627cb8adcd">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f1cf3ea4-6dec-45fe-b882-65c1fe476c15">
+              <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+              <ColumnID>LineAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="01e8d4c9-3ad1-426c-ad36-e324d377d09a">
+          <ID>Tax Amount</ID>
+          <Name>Tax Amount</Name>
+          <Source dwd:design-time-name="c1b4097d-18e6-468f-acc4-6c084afaa942">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e23901c6-6553-4e71-bac9-f3de1e104094">
+              <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+              <ColumnID>TaxAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2475f327-6cf7-430d-b2e7-83308b37e950">
+          <ID>Line Discount Amount</ID>
+          <Name>Line Discount Amount</Name>
+          <Source dwd:design-time-name="dd939f5c-0d73-4ed5-9845-cf95858116f2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f413ace3-85be-4311-8f46-e61bf13149f0">
+              <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+              <ColumnID>LineDiscountAmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5059b17-95ac-4b9b-a7f0-0907a845b4fa">
+          <ID>Sales Transaction Count</ID>
+          <Name>Sales Transaction Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ecb1c95d-b4cd-4ba2-964d-eb8c7b7ddafd">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="12ebac40-8d20-46a6-ad88-98b512759921">
+              <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>1084778</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2004f228-e72b-4b3e-b240-33713eda0dc3">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="791d1e5c-71df-4655-9946-49d9d65078fa">
+              <AttributeID>Product Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3ce6948d-606a-49ff-9c75-0cc3e64a8751">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed92fbca-f49d-47af-b903-1ddebd8535d0">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Product_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="659a254c-9feb-4912-b14c-64de346f017c">
+          <CubeDimensionID>Tesca Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="466979ae-3c93-497e-83c4-a0ed9b59b25a">
+              <AttributeID>Customer Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cb3d6896-33dd-45fa-b179-ef9e031fd714">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bdf61333-d754-480e-9495-ac1429a237fb">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Customer_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="58100aa7-6c5a-4fa6-99f0-6ae6d3be9a5a">
+          <CubeDimensionID>Point Of Sales Channel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e29389df-134e-42ad-bc45-ecd7f0ebeb1d">
+              <AttributeID>Channel SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="687f2ba0-ab67-4fa9-83b9-afb58156c5e6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d3693b0-e262-4a73-b805-7c1a8d7d30b9">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Channel_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="692fdd78-97af-4992-bafb-d7063bf81cb7">
+          <CubeDimensionID>Promotion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e7ff8f62-6303-4c92-a0ad-2713145b946d">
+              <AttributeID>Promotion Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e68f6e8-2e03-4c89-979f-26c4124a5e10">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6555fcc0-3dd1-40c0-8e7f-5def627a8c8f">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Promotion_Sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ef374ec5-9e25-4683-9717-38fcc75cef93">
+          <CubeDimensionID>Tesca Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fdc24f6b-453a-4701-9fb4-eaa549b8430c">
+              <AttributeID>Employee Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a140408f-22fb-4950-93fa-ea850a5be039">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9de78cb5-6ada-44e5-a3f1-aba80f1c5fff">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Employee_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="87b02ea2-1840-41d5-9f1d-b966c1d7ec05">
+          <CubeDimensionID>Store</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="61f02078-f330-430a-8af9-d62c18b27dd1">
+              <AttributeID>Store Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7b89445-398b-49ff-bd9b-0c5436a83ace">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="737c77c7-f819-4980-979c-da6f6a96cb0f">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Store_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="19dc4bc6-7214-4a6e-b6e8-0aaec1d5f7ec">
+          <CubeDimensionID>Transaction Number</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4a26ead8-d45a-46ae-b350-54f24f5d2658">
+              <AttributeID>Transaction No</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="994695bc-e501-4209-a9e2-eb0261cd7798">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8166d366-81de-4643-8492-4b20d162155f">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>TransactionNo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8b2e47c9-43b8-464a-8367-3ea4449f1ece">
+          <CubeDimensionID>Delivery Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e045043b-7cb2-459f-befa-81f88c26e61f">
+              <AttributeID>Hour Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="915d6cc1-26cc-4060-be40-9abb02797521">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="194b8842-bf3b-4521-89a7-46c6dcf472ac">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>deliveryHour_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="49535ce9-d97e-4764-911f-c4fcc682797b">
+          <CubeDimensionID>Transaction Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29be284e-4de0-4aa4-a9e7-8364eab5c69a">
+              <AttributeID>Hour Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="95def831-e25e-4b8a-b441-c459802a923d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eec8d440-0f68-4c7c-a9bb-1bc91f3e6786">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>TransHour_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="52a0f158-47db-4737-8daa-29f7843456e9">
+          <CubeDimensionID>Order Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc50f7b1-ccce-461c-8988-de49a4f70636">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="db4ee598-2827-4a5d-8bcb-07b9fecd2955">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33f14acc-08ac-4c1a-9259-4300129fa31e">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>orderDate_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="812a3047-e7ba-4e5d-b39a-eb8b08052fa6">
+          <CubeDimensionID>Delivery Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="62eb79af-aaf3-46b3-bdc3-4518bcd59e00">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="adef223f-dead-4c6c-8222-4b4acbbdc2cd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb949a18-d633-46f2-aa0f-52eb111567c7">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>deliveryDate_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e2cdf800-b60d-4eb8-af43-2f9f4a5ef2d2">
+          <CubeDimensionID>Transaction Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f5e631b0-18e3-4afd-9e6d-988d093baca1">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="add5f09f-641c-4936-aa9d-454ed30954f8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="38e2c510-a935-4de1-8f46-fa1f8f8d8e7d">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>Transdate_Sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fdd13b68-6c39-4135-a0c1-6053371fda79">
+          <CubeDimensionID>Order Hour</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9e492092-654e-47f7-a07c-16ed1202438d">
+              <AttributeID>Hour Sk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b24bfae-dc49-4407-9ceb-c494995baca4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a82d7822-6df5-4079-8966-ed99bb4f471c">
+                    <TableID>TescaEdw_Fact_SalesTransaction</TableID>
+                    <ColumnID>orderHour_sk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="def51540-e4ab-4f5b-b537-223593b892bd">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="1d327935-5de7-45ed-9a13-570a4270429f">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Average Quantity]
+ AS [Measures].[Quantity]/[Measures].[Sales Transaction Count], 
+FORMAT_STRING = "Standard", 
+NON_EMPTY_BEHAVIOR = { [Quantity], [Sales Transaction Count] }, 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="bb992144-0ac2-4600-9292-4773be30ccb0">
+      <ID>KPI</ID>
+      <Name>Sales Order Indicator</Name>
+      <AssociatedMeasureGroupID>Sales Transaction</AssociatedMeasureGroupID>
+      <Value>[Measure/s].[Quantity]/[Measures].[Sales Transaction Count]</Value>
+      <Goal>100</Goal>
+      <Status>case
+when kpivalue("Sales Order Indicator")&gt;kpigoal("Sales Order Indicator")then 1
+when kpivalue("Sales Order Indicator")&lt;kpigoal("Sales Order Indicator")then 0
+Else -1
+End</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

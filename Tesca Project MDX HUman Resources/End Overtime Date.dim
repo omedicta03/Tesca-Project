@@ -1,0 +1,332 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9158e1c8-e918-406d-944c-7fee5bde2aa3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>End Overtime Date</ID>
+  <Name>End Overtime Date</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1065" scrolltop="-3894" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6509" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="End Overtime Date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="End Overtime Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1065</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3894</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c7e459e7-9dec-48e6-bf8b-45f9c0e2e9fb">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="b1165a00-5cbb-4d96-a250-a04b5d09850b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1905f069-565b-4a6c-a749-448e4ada9a4f">
+      <ID>Datekey</ID>
+      <Name>Datekey</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bee2d52d-cad0-4a24-a995-d212f92bc807">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2821d1c5-10b9-4846-8d6d-dc91203cae1f">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>datekey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="93ebee14-1850-4dae-bd12-599891460327">
+          <AttributeID>Calendar Date</AttributeID>
+          <Name>End Overtime Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f4a1af8-4ec7-4b18-8233-377a0ff94bfb">
+          <AttributeID>Calendar Year</AttributeID>
+          <Name>End Overtime Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f525b27b-9713-48a7-b488-360ae52cda98">
+          <AttributeID>Calendar Quarter</AttributeID>
+          <Name>End Overtime Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8757380c-e9c1-4473-915b-ab81e09864d6">
+          <AttributeID>Calendar Month</AttributeID>
+          <Name>End Overtime Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0c0b9f5b-f8aa-4d46-a33b-6aa664b13b2a">
+          <AttributeID>Calendar English Month</AttributeID>
+          <Name>End Overtime English Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="00d42528-ec44-4fc9-9075-386b02a9d751">
+          <AttributeID>Calendar Day</AttributeID>
+          <Name>End Overtime Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f11a0a2-5932-491a-b0b9-dcc4826611d5">
+          <AttributeID>Calendar English Day</AttributeID>
+          <Name>End Overtime English Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="096c0870-0103-4cc5-acd7-74507e7b9f9c">
+          <AttributeID>Calendar Week</AttributeID>
+          <Name>End Overtime Week</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33c430e0-49b1-4fe0-a626-84f9735e03cc">
+          <AttributeID>Calendar Dayof Year</AttributeID>
+          <Name>End Overtime Day of Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="39469812-c007-4645-9922-cf749d013201">
+      <ID>Calendar Date</ID>
+      <Name>End Overtime Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="195cad7f-f1f9-4821-af76-6d4aecf711b8">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79adf552-bea7-44a5-acdc-f2f8488691f2">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8579f9e-4830-4dc5-92fc-b8fd060c23ba">
+      <ID>Calendar Year</ID>
+      <Name>End Overtime Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed43b309-33f4-4565-af0a-f25849903a72">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d08bdc6d-11a1-4945-88e1-4fb9a1169abe">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0763bab-b383-4417-937d-1342e6e2133e">
+      <ID>Calendar Quarter</ID>
+      <Name>End Overtime Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a186626-dd5d-4b92-870f-3bec7edf3ab0">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a78aabc8-ca97-437c-8f8d-e81b4ebb884c">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c80ca330-9d0d-4763-b539-c655ea7679f4">
+      <ID>Calendar Month</ID>
+      <Name>End Overtime Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f700134-2fd9-4bf1-83c5-335563fbb768">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="865f2836-abfd-4a95-ab54-af49a68b5a93">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="276f9538-3f98-4bf2-9be5-e24419644522">
+      <ID>Calendar English Month</ID>
+      <Name>End Overtime English Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9081527a-cf13-47d3-a146-6f9b9eac12c9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddb4550c-e69b-42ab-bf63-535b3917ac98">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarEnglishMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dca6c4a6-dfbb-4c56-901b-c027134e17c9">
+      <ID>Calendar Day</ID>
+      <Name>End Overtime Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed69f62b-5a71-4551-aac5-4d93319af494">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38f01157-c3da-4170-87c8-198cf5f23902">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>calendarDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ff15c0ea-3205-4515-8ba4-01a8182876c1">
+      <ID>Calendar English Day</ID>
+      <Name>End Overtime English Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb02385d-f843-4aed-bb0c-fc2849b06159">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f3accb7-513b-4f34-8222-887fcfda1d2d">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarEnglishDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="671d8414-ab81-4372-93e8-401ce781a3b2">
+      <ID>Calendar Week</ID>
+      <Name>End Overtime Week</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8810cd75-098c-4d4e-8673-782cc77fc63c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6fa06976-5332-40ae-9a09-fcd6b6fe15dc">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a19b6456-45bf-47ee-8228-a83dbf2e7769">
+      <ID>Calendar Dayof Year</ID>
+      <Name>End Overtime Day of Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35af33c6-840e-4077-ad2b-7d17e702e777">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="250a8db5-c940-42d7-aec8-e2ac77e5fae7">
+            <TableID>End_x0020_Overtime_x0020_Date</TableID>
+            <ColumnID>CalendarDayofYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="90a97a02-753f-4402-8fe2-bcc2be134f35">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="56b425df-03cb-4198-b86c-cc7e4c433ad5">
+          <ID>Datekey</ID>
+          <Name>Datekey</Name>
+          <SourceAttributeID>Datekey</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9e251c2d-8a3b-4336-aa04-e9a1219418ed">
+          <ID>End Overtime Day</ID>
+          <Name>End Overtime Day</Name>
+          <SourceAttributeID>Calendar Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b9c1a242-10b7-4539-8772-d21b0744eb32">
+          <ID>End Overtime Date</ID>
+          <Name>End Overtime Date</Name>
+          <SourceAttributeID>Calendar Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6e8e7c00-ed03-40db-a6de-a77c87c1b25a">
+          <ID>End Overtime Day of Year</ID>
+          <Name>End Overtime Day of Year</Name>
+          <SourceAttributeID>Calendar Dayof Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c04dcb72-4cb8-479d-a757-958d10228f57">
+          <ID>End Overtime Week</ID>
+          <Name>End Overtime Week</Name>
+          <SourceAttributeID>Calendar Week</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7a84a207-6d21-4ecc-9b4d-30845d99dd2c">
+          <ID>End Overtime Month</ID>
+          <Name>End Overtime Month</Name>
+          <SourceAttributeID>Calendar Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cb29f07f-9fb0-42f9-b144-d30541953366">
+          <ID>End Overtime Year</ID>
+          <Name>End Overtime Year</Name>
+          <SourceAttributeID>Calendar Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="182af68f-c9b9-4ddb-a0c2-6dcbfff2c6ba">
+          <ID>End Overtime English Day</ID>
+          <Name>End Overtime English Day</Name>
+          <SourceAttributeID>Calendar English Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="50db0c28-eeb9-4d70-a45f-bb083529907e">
+          <ID>End Overtime English Month</ID>
+          <Name>End Overtime English Month</Name>
+          <SourceAttributeID>Calendar English Month</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

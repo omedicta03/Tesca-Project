@@ -1,0 +1,1555 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer ONOMEBENIMDX Tesca EDW",
+        "connectionString": "Provider=SQLNCLI11;Data Source=ONOME\\BENIMDX;Initial Catalog=Tesca EDW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "onomeitimi@gmail.com",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Customer",
+        "columns": [
+          {
+            "name": "Customer_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Customer_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customerid",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "customerid",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CustomerName",
+            "dataType": "string",
+            "sourceColumn": "CustomerName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customeraddress",
+            "dataType": "string",
+            "sourceColumn": "customeraddress",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "CityName",
+            "dataType": "string",
+            "sourceColumn": "CityName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "State",
+            "dataType": "string",
+            "sourceColumn": "State",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveDate",
+            "dataType": "dateTime",
+            "sourceColumn": "EffectiveDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCustomer",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimCustomer].* FROM [TescaEdw].[DimCustomer] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimCustomer].* FROM [TescaEdw].[DimCustomer] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimCustomer"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Trans Date",
+        "columns": [
+          {
+            "name": "datekey",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "datekey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Calendar Date",
+            "dataType": "dateTime",
+            "sourceColumn": "CalendarDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Trans Calendar Year",
+            "dataType": "int64",
+            "sourceColumn": "CalendarYear",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Calendar Quarter",
+            "dataType": "string",
+            "sourceColumn": "CalendarQuarter",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar Month",
+            "dataType": "int64",
+            "sourceColumn": "CalendarMonth",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Calendar EnglishMonth",
+            "dataType": "string",
+            "sourceColumn": "CalendarEnglishMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar IboMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarIboMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar PortugeseMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarPortugeseMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar ArabicMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarArabicMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar FrenchMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarFrenchMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans calendarDay",
+            "dataType": "int64",
+            "sourceColumn": "calendarDay",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Calendar EnglishDay",
+            "dataType": "string",
+            "sourceColumn": "CalendarEnglishDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar IboDay",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarIboDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar Portugese Day",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarPortugeseDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar Arabic Day",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarArabicDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans  Calendar French Day",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarFrenchDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Calendar Week",
+            "dataType": "int64",
+            "sourceColumn": "CalendarWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Calendar Day of Year",
+            "dataType": "int64",
+            "sourceColumn": "CalendarDayofYear",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "EffectiveStartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dimDate",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[dimDate].* FROM [TescaEdw].[dimDate] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[dimDate].* FROM [TescaEdw].[dimDate] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dimDate"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Employee",
+        "columns": [
+          {
+            "name": "Employee_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Employee_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EmployeeId",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "EmployeeId",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EmployeeNo",
+            "dataType": "string",
+            "sourceColumn": "EmployeeNo",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EmployeeName",
+            "dataType": "string",
+            "sourceColumn": "EmployeeName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DateofBirth",
+            "dataType": "dateTime",
+            "sourceColumn": "DateofBirth",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "MaritalStatus",
+            "dataType": "string",
+            "sourceColumn": "MaritalStatus",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "EffectiveEndDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveEndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimEmployee",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimEmployee].* FROM [TescaEdw].[DimEmployee] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimEmployee].* FROM [TescaEdw].[DimEmployee] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimEmployee"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Trans Hour",
+        "columns": [
+          {
+            "name": "hour_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "hour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Hour 24hr",
+            "dataType": "int64",
+            "sourceColumn": "hour24",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Hour 12hr",
+            "dataType": "int64",
+            "sourceColumn": "hour12",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Trans Operation Hours",
+            "dataType": "string",
+            "sourceColumn": "hourAP",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Period of Day",
+            "dataType": "string",
+            "sourceColumn": "Periodofday",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Trans Business Hour",
+            "dataType": "string",
+            "sourceColumn": "BusinessHour",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectivestartDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectivestartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimHour",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimHour].* FROM [TescaEdw].[DimHour] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimHour].* FROM [TescaEdw].[DimHour] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimHour"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "PosChannel",
+        "columns": [
+          {
+            "name": "Channel_SK",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Channel_SK",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ChannelID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "ChannelID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ChannelNo",
+            "dataType": "string",
+            "sourceColumn": "ChannelNo",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DeviceModel",
+            "dataType": "string",
+            "sourceColumn": "DeviceModel",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "InstallationDate",
+            "dataType": "dateTime",
+            "sourceColumn": "InstallationDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "serialNo",
+            "dataType": "string",
+            "sourceColumn": "serialNo",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveStartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "EffectiveEndDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveEndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimPosChannel",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimPosChannel].* FROM [TescaEdw].[DimPosChannel] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimPosChannel].* FROM [TescaEdw].[DimPosChannel] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimPosChannel"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "columns": [
+          {
+            "name": "product_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "product_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "productid",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "productid",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "productname",
+            "dataType": "string",
+            "sourceColumn": "productname",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "productnumber",
+            "dataType": "string",
+            "sourceColumn": "productnumber",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "unitprice",
+            "dataType": "double",
+            "sourceColumn": "unitprice",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "department",
+            "dataType": "string",
+            "sourceColumn": "department",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveStartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "EffectiveEndDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveEndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dimproduct",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[Dimproduct].* FROM [TescaEdw].[Dimproduct] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[Dimproduct].* FROM [TescaEdw].[Dimproduct] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dimproduct"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Promotion",
+        "columns": [
+          {
+            "name": "Promotion_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Promotion_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "promotionid",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "promotionid",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "StartDate",
+            "dataType": "dateTime",
+            "sourceColumn": "StartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "EndDate",
+            "dataType": "dateTime",
+            "sourceColumn": "EndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "DiscountPercent",
+            "dataType": "double",
+            "sourceColumn": "DiscountPercent",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "promotion",
+            "dataType": "string",
+            "sourceColumn": "promotion",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dimpromotion",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[Dimpromotion].* FROM [TescaEdw].[Dimpromotion] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[Dimpromotion].* FROM [TescaEdw].[Dimpromotion] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dimpromotion"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Store",
+        "columns": [
+          {
+            "name": "store_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "store_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "storeid",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "storeid",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "storename",
+            "dataType": "string",
+            "sourceColumn": "storename",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "streetaddress",
+            "dataType": "string",
+            "sourceColumn": "streetaddress",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dimstore",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[Dimstore].* FROM [TescaEdw].[Dimstore] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[Dimstore].* FROM [TescaEdw].[Dimstore] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Dimstore"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "SalesTransaction",
+        "isHidden": true,
+        "columns": [
+          {
+            "name": "sales_sk",
+            "dataType": "int64",
+            "sourceColumn": "sales_sk",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "TransactionNo",
+            "dataType": "string",
+            "sourceColumn": "TransactionNo",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Transdate_Sk",
+            "dataType": "int64",
+            "sourceColumn": "Transdate_Sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "TransHour_sk",
+            "dataType": "int64",
+            "sourceColumn": "TransHour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "orderDate_sk",
+            "dataType": "int64",
+            "sourceColumn": "orderDate_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "orderHour_sk",
+            "dataType": "int64",
+            "sourceColumn": "orderHour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deliveryDate_sk",
+            "dataType": "int64",
+            "sourceColumn": "deliveryDate_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deliveryHour_sk",
+            "dataType": "int64",
+            "sourceColumn": "deliveryHour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Channel_sk",
+            "dataType": "int64",
+            "sourceColumn": "Channel_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Customer_sk",
+            "dataType": "int64",
+            "sourceColumn": "Customer_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Employee_sk",
+            "dataType": "int64",
+            "sourceColumn": "Employee_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Product_sk",
+            "dataType": "int64",
+            "sourceColumn": "Product_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Store_sk",
+            "dataType": "int64",
+            "sourceColumn": "Store_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Promotion_Sk",
+            "dataType": "int64",
+            "sourceColumn": "Promotion_Sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Quantity",
+            "dataType": "double",
+            "sourceColumn": "Quantity",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "LineAmount",
+            "dataType": "double",
+            "sourceColumn": "LineAmount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "TaxAmount",
+            "dataType": "double",
+            "sourceColumn": "TaxAmount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "LineDiscountAmount",
+            "dataType": "double",
+            "sourceColumn": "LineDiscountAmount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "loaddate",
+            "dataType": "dateTime",
+            "sourceColumn": "loaddate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Fact_SalesTransaction",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[Fact_SalesTransaction].* FROM [TescaEdw].[Fact_SalesTransaction] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Line Amount",
+            "expression": "sum(SalesTransaction[LineAmount])",
+            "kpi": {
+              "targetExpression": "100",
+              "statusExpression": [
+                "var x='SalesTransaction'[Total Line Amount]/'SalesTransaction'[_Total Line Amount Goal] return",
+                "            if(ISBLANK(x),BLANK(),",
+                "                    If(x<0.33,-1,",
+                "\t                If(x<0.66,0,1)",
+                "                )",
+                "            )",
+                "            "
+              ],
+              "annotations": [
+                {
+                  "name": "GoalType",
+                  "value": "StaticValue"
+                },
+                {
+                  "name": "KpiStatusType",
+                  "value": "Linear"
+                },
+                {
+                  "name": "KpiThresholdType",
+                  "value": "Percentage"
+                },
+                {
+                  "name": "KpiThresholdOrdering",
+                  "value": "Ascending"
+                },
+                {
+                  "name": "KpiThresholdCount",
+                  "value": "2"
+                },
+                {
+                  "name": "KpiThreshold_0",
+                  "value": "33"
+                },
+                {
+                  "name": "KpiThreshold_1",
+                  "value": "66"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Total Tax Amount",
+            "expression": "sum(SalesTransaction[TaxAmount])"
+          },
+          {
+            "name": "Total LineDiscount Amount",
+            "expression": "sum(SalesTransaction[LineDiscountAmount])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[Fact_SalesTransaction].* FROM [TescaEdw].[Fact_SalesTransaction] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Fact_SalesTransaction"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Delivery Hour",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "hour_sk",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Hour[hour_sk]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Hour 24hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Hour 24hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Hour 12hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Hour 12hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Operation Hours",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Operation Hours]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Period of Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Period of Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Business Hour",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Business Hour]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectivestartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Hour[EffectivestartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Trans Hour'"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order Hour",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "hour_sk",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Hour[hour_sk]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Hour 24hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Hour 24hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Hour 12hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Hour 12hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Operation Hours",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Operation Hours]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Period of Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Period of Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Business Hour",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Hour[Trans Business Hour]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectivestartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Hour[EffectivestartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Trans Hour'"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order Date",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "datekey",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[datekey]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Date",
+            "dataType": "dateTime",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Date]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Quarter",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Quarter]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Month",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Month]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar EnglishMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar EnglishMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar IboMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar IboMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar PortugeseMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar PortugeseMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar ArabicMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar ArabicMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar FrenchMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar FrenchMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order calendarDay",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans calendarDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar EnglishDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar EnglishDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar IboDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar IboDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Portugese Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar Portugese Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Arabic Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar Arabic Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order  Calendar French Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans  Calendar French Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Week",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Week]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Order Calendar Day of Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Day of Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[EffectiveStartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Trans Date'"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Delivery Date",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "datekey",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[datekey]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Date",
+            "dataType": "dateTime",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Date]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Quarter",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Quarter]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Month",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Month]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar EnglishMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar EnglishMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar IboMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar IboMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar PortugeseMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar PortugeseMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar ArabicMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar ArabicMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar FrenchMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar FrenchMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery calendarDay",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans calendarDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar EnglishDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar EnglishDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar IboDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar IboDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Portugese Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar Portugese Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Arabic Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans Calendar Arabic Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery  Calendar French Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[Trans  Calendar French Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Week",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Week]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Delivery Calendar Day of Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Trans Date[Trans Calendar Day of Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Trans Date[EffectiveStartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Trans Date'"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Transaction No",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "TransactionNo",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "SalesTransaction[TransactionNo]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "values(SalesTransaction[TransactionNo])"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "15ff4ab4-f82d-4b4a-82fe-ad8128ea707d",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Customer_sk",
+        "toTable": "Customer",
+        "toColumn": "Customer_sk"
+      },
+      {
+        "name": "928777fd-f64d-4144-a6db-58b3ce1843f3",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Transdate_Sk",
+        "toTable": "Trans Date",
+        "toColumn": "datekey"
+      },
+      {
+        "name": "956b389f-5bf5-45c3-92da-b65bf933ea2e",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Employee_sk",
+        "toTable": "Employee",
+        "toColumn": "Employee_sk"
+      },
+      {
+        "name": "d3dcd505-95e1-447d-bd3a-30a8567fff11",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "TransHour_sk",
+        "toTable": "Trans Hour",
+        "toColumn": "hour_sk"
+      },
+      {
+        "name": "4befe915-2798-45a5-8b5d-81e8e5d4ab48",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Channel_sk",
+        "toTable": "PosChannel",
+        "toColumn": "Channel_SK"
+      },
+      {
+        "name": "9c43a2f6-f75f-4f77-92d1-6647dc506d12",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Product_sk",
+        "toTable": "Product",
+        "toColumn": "product_sk"
+      },
+      {
+        "name": "3b988a0e-8e60-4d7c-a064-a8cc97b22a52",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Promotion_Sk",
+        "toTable": "Promotion",
+        "toColumn": "Promotion_sk"
+      },
+      {
+        "name": "1bb3c500-d362-47b4-ab17-d3eb7d92bc97",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "Store_sk",
+        "toTable": "Store",
+        "toColumn": "store_sk"
+      },
+      {
+        "name": "a65509ce-747b-4909-9b34-b9cee2302c81",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "orderHour_sk",
+        "toTable": "Order Hour",
+        "toColumn": "hour_sk"
+      },
+      {
+        "name": "efe06c52-5096-409a-b671-8ee0ceae6abe",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "deliveryHour_sk",
+        "toTable": "Delivery Hour",
+        "toColumn": "hour_sk"
+      },
+      {
+        "name": "2124d0d2-cdb2-4148-94cc-ec5adf8b5688",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "orderDate_sk",
+        "toTable": "Order Date",
+        "toColumn": "datekey"
+      },
+      {
+        "name": "e532fd61-e3de-4631-81af-0a0e9c892c24",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "deliveryDate_sk",
+        "toTable": "Delivery Date",
+        "toColumn": "datekey"
+      },
+      {
+        "name": "f5653276-6f30-43b9-98e3-b68f974258ea",
+        "fromTable": "SalesTransaction",
+        "fromColumn": "TransactionNo",
+        "toTable": "Transaction No",
+        "toColumn": "TransactionNo"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

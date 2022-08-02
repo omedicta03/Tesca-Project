@@ -1,0 +1,266 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b27b0c7a-845a-4b90-b8b0-e2e4b313728c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Point Of Sales Channel</ID>
+  <Name>Point Of Sales Channel</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1470" scrolltop="-4569" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6403" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Point of Sales Channel" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3422" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005e0d0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimPosChannel" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1470</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4569</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1aac91c1-774d-4ab0-9261-017201fd3aac">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="98a49401-0280-4373-b3e2-a076402f3574">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="83146afa-9070-43f8-b515-98e3b51eccc7">
+      <ID>Channel SK</ID>
+      <Name>Channel SK</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>14</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a8f27f8-23b9-4ed8-aaf1-76671eef27e0">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96431fda-47b2-490c-b2c9-a79434dc783b">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>Channel_SK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a837e4dd-ea37-4316-bdb2-d70465a847a8">
+          <AttributeID>Channel No</AttributeID>
+          <Name>Channel No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a48ccaa-66e2-4faf-b182-8397f38daa06">
+          <AttributeID>Device Model</AttributeID>
+          <Name>Device Model</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="861fc06e-16b6-477b-bcb5-a7af798d7f6c">
+          <AttributeID>Installation Date</AttributeID>
+          <Name>Installation Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b6b39523-1495-4af9-b68a-1b67b184932e">
+          <AttributeID>Serial No</AttributeID>
+          <Name>Serial No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f0f8aa2-4ba8-444a-9205-105245753af5">
+          <AttributeID>Effective Start Date</AttributeID>
+          <Name>Effective Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b33f101-b26d-427d-ad73-fd4f6d5c05f3">
+          <AttributeID>Effective End Date</AttributeID>
+          <Name>Effective End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8f6b1f9-f921-4042-a360-0445a2b3d517">
+      <ID>Channel No</ID>
+      <Name>Channel No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a93d812b-98f6-4d98-a402-cc5511113692">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84e53e89-546a-481c-ad42-c5f6b39a0b54">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>ChannelNo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c7241efc-180b-4496-8c11-26d878a20c92">
+      <ID>Device Model</ID>
+      <Name>Device Model</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a2cbec5-a7e0-4050-aa28-b5f60246ac62">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a13d9cf5-ea11-4352-a9e0-8af3e284adb2">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>DeviceModel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33cfc364-27e2-4c67-835e-b6b5d7fd9165">
+      <ID>Installation Date</ID>
+      <Name>Installation Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c0043da-e460-4433-9d70-5a60653fc3d4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16e7985c-290f-443b-8c5c-735a092fd493">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>InstallationDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c63a395e-f203-4ca0-9ff8-bd643507020f">
+      <ID>Serial No</ID>
+      <Name>Serial No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ede22e9-1a8f-4ee3-8d53-d70774f6c906">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31d8875b-fd8f-4a30-9950-f0cf48b71b6a">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>serialNo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1354d2dc-e30b-45b6-9289-16af19896a22">
+      <ID>Effective Start Date</ID>
+      <Name>Effective Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc8f043d-87d8-4260-83e9-fc459ff2358a">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff050c45-3f4e-4026-98b5-401996c0fa9e">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>EffectiveStartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76806f8c-ee1d-4ee7-b2d2-64c359b7dd92">
+      <ID>Effective End Date</ID>
+      <Name>Effective End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db6bd649-d15f-4a2f-8c5e-b17f01714dd1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="394da8b1-0c9b-4c8d-aa7f-6f15ac31bb7d">
+            <TableID>TescaEdw_DimPosChannel</TableID>
+            <ColumnID>EffectiveEndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="1b4c7ea3-9152-496f-a536-66bad7ccf331">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="25607f77-42e3-4ff8-b616-40642ff65738">
+          <ID>Channel SK</ID>
+          <Name>Channel SK</Name>
+          <SourceAttributeID>Channel SK</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a1bc72b5-9487-4f77-89b6-852cc03465fa">
+          <ID>Channel No</ID>
+          <Name>Channel No</Name>
+          <SourceAttributeID>Channel No</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1d5f75bf-a678-4ea4-bc73-9fe57178c9fa">
+          <ID>Device Model</ID>
+          <Name>Device Model</Name>
+          <SourceAttributeID>Device Model</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7de048c9-beef-4762-8efb-509568c81bd4">
+          <ID>Serial No</ID>
+          <Name>Serial No</Name>
+          <SourceAttributeID>Serial No</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c05006a2-9490-4913-b9ab-e7cf39b21df0">
+          <ID>Installation Date</ID>
+          <Name>Installation Date</Name>
+          <SourceAttributeID>Installation Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7758662c-08b9-4484-8d67-3a79b00c8019">
+          <ID>Effective Start Date</ID>
+          <Name>Effective Start Date</Name>
+          <SourceAttributeID>Effective Start Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f61c1b4e-bd1b-4010-8300-3371c58f159d">
+          <ID>Effective End Date</ID>
+          <Name>Effective End Date</Name>
+          <SourceAttributeID>Effective End Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

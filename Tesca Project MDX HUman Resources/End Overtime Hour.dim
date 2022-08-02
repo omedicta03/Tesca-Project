@@ -1,0 +1,265 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd70303b-32c2-448a-81fb-c327af9f58d9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>End Overtime Hour</ID>
+  <Name>End Overtime Hour</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1541" scrolltop="-4745" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5909" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="End Overtime Hour" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3387" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="End Overtime Hour" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1541</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4745</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cd1db36e-b6d0-4a18-9a36-5bf98c3ed6c2">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="fde1f2d1-8b0d-4401-a7ed-8b8c6f414a0a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="fb6ceb7b-2cd2-403f-858a-60df64a544b5">
+      <ID>Hour Sk</ID>
+      <Name>Hour Sk</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0e5d26d-df06-424c-9dcd-aca001835375">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe4385cd-e58e-45a1-9cf4-7170bac5f0f0">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>hour_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1d748d7c-33fe-41c6-8189-37e8af30ba6c">
+          <AttributeID>Hour24</AttributeID>
+          <Name>End Overtime(24Hr)</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="40389a8a-1768-4f9e-a3ff-fea4eb118813">
+          <AttributeID>Hour12</AttributeID>
+          <Name>End Overtime(12Hr)</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c75154b5-3cc3-4c8d-866a-d25f58b37cfc">
+          <AttributeID>Hour AP</AttributeID>
+          <Name>Operation Hours</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7422e14e-3a65-4389-8341-c2d5585d822f">
+          <AttributeID>Periodofday</AttributeID>
+          <Name>Period of Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="85edcd88-4a2e-4aec-926a-199a2d6063bc">
+          <AttributeID>Business Hour</AttributeID>
+          <Name>Business Hour</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1784c542-d773-4bef-8c5a-f422212b58f2">
+          <AttributeID>Effectivestart Date</AttributeID>
+          <Name>Effective Start Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5902d861-e5f7-4fb9-884a-48394e810d6f">
+      <ID>Hour24</ID>
+      <Name>End Overtime 24Hr</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e3ba1ba-94c1-45e6-9ae5-bfce52e85458">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf930ff-a71a-464f-8643-7c1b66e0c7e1">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>hour24</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13a09182-cda3-414b-b926-8533b16f4e1b">
+      <ID>Hour12</ID>
+      <Name>End Overtime 12Hr</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="997a424f-b55a-4ac6-823f-76ffe7b8374d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad974170-f666-4083-9650-563fa692e14c">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>hour12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0bd8381-e9aa-4ddb-a441-2adf4e41b9c7">
+      <ID>Hour AP</ID>
+      <Name>End Operation Hours</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24143a27-0e01-4f4e-8aa7-3a8db442ad2a">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c593f5a-4bc6-404f-9db8-0b606781bded">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>hourAP</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="967be059-f6af-432f-a239-25244c01633c">
+      <ID>Periodofday</ID>
+      <Name>End Period of Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6fe56e8-007d-4d0f-96a7-9e077127c151">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f054003-8751-4d31-8065-e7114b94263b">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>Periodofday</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bc3fe306-8eb3-4426-a1bf-c996e1a6c844">
+      <ID>Business Hour</ID>
+      <Name>End Business Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f74b8d4-e139-4a43-a200-d01d594e1747">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6ca26de-3712-4b31-a7f4-8c8043aa0230">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>BusinessHour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b1351fd-9d65-43b0-af5a-275e472efbe2">
+      <ID>Effectivestart Date</ID>
+      <Name>Effective Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="330ff31d-9fd9-4b29-8460-9d94512c71d3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e28bcb9-6e75-4021-a954-84be606333e3">
+            <TableID>End_x0020_Overtime_x0020_Hour</TableID>
+            <ColumnID>EffectivestartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c88f681a-6aa4-489a-aade-849c5c3fbc7b">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="0af59a30-ea07-4460-b78e-a859dc89d486">
+          <ID>Hour Sk</ID>
+          <Name>Hour Sk</Name>
+          <SourceAttributeID>Hour Sk</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c03aac74-14d3-4f0d-85c1-d3f4fd5fee31">
+          <ID>Business Hour</ID>
+          <Name>Business Hour</Name>
+          <SourceAttributeID>Business Hour</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="946c7b6b-67c9-44bf-9bac-d9ee2cef8294">
+          <ID>Operation Hours</ID>
+          <Name>Operation Hours</Name>
+          <SourceAttributeID>Hour AP</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="323f9387-3439-44d1-b9d3-5f82f9313bd4">
+          <ID>Period of Day</ID>
+          <Name>Period of Day</Name>
+          <SourceAttributeID>Periodofday</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6e92e15e-d546-4a5a-89c2-8099b7739224">
+          <ID>End Overtime 12Hr</ID>
+          <Name>End Overtime 12Hr</Name>
+          <SourceAttributeID>Hour12</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="14105e7a-c07a-421a-baf3-ac36abb0e010">
+          <ID>End Overtime 24Hr</ID>
+          <Name>End Overtime 24Hr</Name>
+          <SourceAttributeID>Hour24</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="42718436-370e-44f1-8ea0-97c75b462a3e">
+          <ID>Effective Start Date</ID>
+          <Name>Effective Start Date</Name>
+          <SourceAttributeID>Effectivestart Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

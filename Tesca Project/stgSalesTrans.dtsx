@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/8/2022 10:29:25 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ONOME"
+  DTS:CreatorName="ONOME\onome odhegba"
+  DTS:DTSID="{D3A9BA62-EB83-476A-A0B9-3C7773C98115}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{98C745C6-0A7C-44F9-B438-A3EF3464C734}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FA6E82E1-A383-4F17-872A-D0A34D99019A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="DesCount">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2DC2B85A-2B24-4448-8505-ACCFD02297AB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageID">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{92AC2D80-FAA9-473D-B1FD-50865445A2CF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceCount">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Control Metrics"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{200CE1F6-8868-4611-90D5-39DC74DA7FE9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Control Metrics"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5BF848FB-23B7-4018-B4B9-BF65D00F6EE7}"
+          SQLTask:SqlStatementSource="declare @SourceCount bigint=?&#xA;declare @DesCount bigint=?&#xA;declare @PackageID int=?&#xA;&#xA;insert into control.Metrics(PackageId, StgSourceCount, StgDestCount,Rundate)&#xA;select @PackageID,@SourceCount,@DesCount, Getdate()&#xA;&#xA;Update control.Package set  LastRundate=GETDATe() Where packageID=@PackageID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::SourceCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::DesCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::PackageID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load Sales Transaction"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{90C8C790-0743-474A-8A93-4A8D89A99863}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Sales Transaction"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Sales Transaction\Extract Sales Transaction"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Extract Sales Transaction"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">IF( select count(*) as EDWCount from [Tesca EDW].TescaEDW.fact_salesTransaction )&gt;0 
+	BEGIN
+		 select TransactionID, TransactionNo, Transdate, orderDate, deliveryDate, Channelid, CustomerID,  EmployeeID, ProductID, StoreID,
+		PromotionID, Quantity, LineAmount, LineDiscountAmount,TaxAmount, getdate() as LoadDate
+		 from salesTransaction   Where Convert(date,Transdate)=DATEADD(d,-1,convert(date,getdate()))  
+	END
+ ELSE
+	 BEGIN 
+		select TransactionID, TransactionNo, Transdate, orderDate, deliveryDate, Channelid, CustomerID,  EmployeeID, ProductID, StoreID,
+		PromotionID, Quantity, LineAmount,LineDiscountAmount,TaxAmount,getdate() as LoadDate
+		from salesTransaction   Where Convert(date,Transdate)&lt;=DATEADD(d,-1,convert(date,getdate()))   
+	END</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Sales Transaction\Extract Sales Transaction.Connections[OleDbConnection]"
+                  connectionManagerID="{F8038C52-5E26-4579-B599-598B1771CDE4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Tesca OLTP]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TransactionID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionID]"
+                      name="TransactionID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionNo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TransactionNo]"
+                      length="50"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionNo]"
+                      name="TransactionNo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Transdate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Transdate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Transdate]"
+                      name="Transdate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[orderDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[orderDate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[orderDate]"
+                      name="orderDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[deliveryDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[deliveryDate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[deliveryDate]"
+                      name="deliveryDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Channelid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Channelid]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Channelid]"
+                      name="Channelid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      name="EmployeeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      name="ProductID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[StoreID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[StoreID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[StoreID]"
+                      name="StoreID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[PromotionID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[PromotionID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[PromotionID]"
+                      name="PromotionID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Quantity]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Quantity]"
+                      name="Quantity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineAmount]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LineAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineAmount]"
+                      name="LineAmount"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineDiscountAmount]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LineDiscountAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineDiscountAmount]"
+                      name="LineDiscountAmount"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TaxAmount]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TaxAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TaxAmount]"
+                      name="TaxAmount"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LoadDate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LoadDate]"
+                      name="LoadDate"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TransactionID]"
+                      dataType="i4"
+                      name="TransactionID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TransactionNo]"
+                      dataType="wstr"
+                      length="50"
+                      name="TransactionNo" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Transdate]"
+                      dataType="dbTimeStamp"
+                      name="Transdate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[orderDate]"
+                      dataType="dbTimeStamp"
+                      name="orderDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[deliveryDate]"
+                      dataType="dbTimeStamp"
+                      name="deliveryDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Channelid]"
+                      dataType="i4"
+                      name="Channelid" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      dataType="i4"
+                      name="EmployeeID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[StoreID]"
+                      dataType="i4"
+                      name="StoreID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[PromotionID]"
+                      dataType="i4"
+                      name="PromotionID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
+                      dataType="r8"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LineAmount]"
+                      dataType="r8"
+                      name="LineAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LineDiscountAmount]"
+                      dataType="r8"
+                      name="LineDiscountAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[TaxAmount]"
+                      dataType="r8"
+                      name="TaxAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TransactionID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TransactionID]"
+                      name="TransactionID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TransactionNo]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TransactionNo]"
+                      name="TransactionNo" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Transdate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Transdate]"
+                      name="Transdate" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[orderDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[orderDate]"
+                      name="orderDate" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[deliveryDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[deliveryDate]"
+                      name="deliveryDate" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Channelid]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Channelid]"
+                      name="Channelid" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                      name="CustomerID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      name="EmployeeID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      name="ProductID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[StoreID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[StoreID]"
+                      name="StoreID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[PromotionID]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[PromotionID]"
+                      name="PromotionID" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Quantity]"
+                      dataType="r8"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[Quantity]"
+                      name="Quantity" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LineAmount]"
+                      dataType="r8"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LineAmount]"
+                      name="LineAmount" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LineDiscountAmount]"
+                      dataType="r8"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LineDiscountAmount]"
+                      name="LineDiscountAmount" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TaxAmount]"
+                      dataType="r8"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[TaxAmount]"
+                      name="TaxAmount" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[LoadDate]"
+                      name="LoadDate" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Sales Transaction\Load Sales Transaction Staging"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Load Sales Transaction Staging"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[TescaOltp].[SalesTransaction]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Connections[OleDbConnection]"
+                  connectionManagerID="{EB3E924D-F4A0-4AC5-A901-53486555F36B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Tesca Staging]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[TransactionID]"
+                      cachedDataType="i4"
+                      cachedName="TransactionID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TransactionID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[TransactionNo]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TransactionNo"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TransactionNo]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TransactionNo]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[Transdate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Transdate"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Transdate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Transdate]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[orderDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="orderDate"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[orderDate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[orderDate]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[deliveryDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="deliveryDate"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[deliveryDate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[deliveryDate]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[Channelid]"
+                      cachedDataType="i4"
+                      cachedName="Channelid"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Channelid]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Channelid]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[EmployeeID]"
+                      cachedDataType="i4"
+                      cachedName="EmployeeID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[StoreID]"
+                      cachedDataType="i4"
+                      cachedName="StoreID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[StoreID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[StoreID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[PromotionID]"
+                      cachedDataType="i4"
+                      cachedName="PromotionID"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[PromotionID]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[PromotionID]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[Quantity]"
+                      cachedDataType="r8"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[Quantity]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[LineAmount]"
+                      cachedDataType="r8"
+                      cachedName="LineAmount"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[LineAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineAmount]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[LineDiscountAmount]"
+                      cachedDataType="r8"
+                      cachedName="LineDiscountAmount"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[LineDiscountAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LineDiscountAmount]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[TaxAmount]"
+                      cachedDataType="r8"
+                      cachedName="TaxAmount"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmount]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[TaxAmount]" />
+                    <inputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].Columns[LoadDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoadDate"
+                      externalMetadataColumnId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[loaddate]"
+                      lineageId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output].Columns[LoadDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TransactionID]"
+                      dataType="i4"
+                      name="TransactionID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TransactionNo]"
+                      dataType="wstr"
+                      length="50"
+                      name="TransactionNo" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Transdate]"
+                      dataType="dbTimeStamp"
+                      name="Transdate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[orderDate]"
+                      dataType="dbTimeStamp"
+                      name="orderDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[deliveryDate]"
+                      dataType="dbTimeStamp"
+                      name="deliveryDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Channelid]"
+                      dataType="i4"
+                      name="Channelid" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                      dataType="i4"
+                      name="EmployeeID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[StoreID]"
+                      dataType="i4"
+                      name="StoreID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[PromotionID]"
+                      dataType="i4"
+                      name="PromotionID" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      dataType="r8"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[LineAmount]"
+                      dataType="r8"
+                      name="LineAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmount]"
+                      dataType="r8"
+                      name="TaxAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[LineDiscountAmount]"
+                      dataType="r8"
+                      name="LineDiscountAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input].ExternalColumns[loaddate]"
+                      dataType="dbTimeStamp"
+                      name="loaddate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Load Sales Transaction Staging.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Sales Transaction\Load Sales Transaction Staging.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Sales Transaction\Load Sales Transaction Staging.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Sales Transaction\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::DesCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load Sales Transaction\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Sales Transaction\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Load Sales Transaction\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Sales Transaction.Paths[OLE DB Source Output]"
+              endId="Package\Load Sales Transaction\Row Count.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Load Sales Transaction\Extract Sales Transaction.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Load Sales Transaction.Paths[Row Count Output 1]"
+              endId="Package\Load Sales Transaction\Load Sales Transaction Staging.Inputs[OLE DB Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\Load Sales Transaction\Row Count.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\OLTP Source Count"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A20E853E-F3A2-4B62-92F9-030B21569B48}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="OLTP Source Count"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F8038C52-5E26-4579-B599-598B1771CDE4}"
+          SQLTask:SqlStatementSource="&#x9; IF( select count(*) as EDWCount from [Tesca EDW].TescaEDW.fact_salesTransaction )&gt;0 &#xA;&#x9;BEGIN&#xA;&#x9;&#x9; select Count(*) as SourceCount&#xA;&#x9;&#x9; from salesTransaction   Where Convert(date,Transdate)=DATEADD(d,-1,convert(date,getdate())) &#xA;&#x9;END&#xA; ELSE&#xA;&#x9; BEGIN &#xA;&#x9;&#x9;select Count(*) as SourceCount&#xA;&#x9;&#x9;from salesTransaction   Where Convert(date,Transdate)&lt;=DATEADD(d,-1,convert(date,getdate()))   &#xA;&#x9;END"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="SourceCount"
+            SQLTask:DtsVariableName="User::SourceCount" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Sales Transaction"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{17EEEF8B-9271-40D6-A1B5-3620A2FF1424}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Sales Transaction"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EB3E924D-F4A0-4AC5-A901-53486555F36B}"
+          SQLTask:SqlStatementSource="Truncate table TescaOltp.SalesTransaction" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{023AD084-A107-429F-8CB1-30548BB5A04D}"
+      DTS:From="Package\Truncate Sales Transaction"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\OLTP Source Count" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{D5875704-D1EC-42BA-971E-6FA5998B76E9}"
+      DTS:From="Package\OLTP Source Count"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load Sales Transaction" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{CE1CCB9A-9806-4732-8127-0FA53E8AE794}"
+      DTS:From="Package\Load Sales Transaction"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Control Metrics" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package\Control Metrics"
+          TopLeft="30.5000009685755,228.099997628927" />
+        <NodeLayout
+          Size="188,42.6666666666667"
+          Id="Package\Load Sales Transaction"
+          TopLeft="31.1250005122274,160.399998303056" />
+        <NodeLayout
+          Size="170.666666666667,42.6666666666667"
+          Id="Package\OLTP Source Count"
+          TopLeft="14.2500003166497,89.4499990352989" />
+        <NodeLayout
+          Size="206.666666666667,42.6666666666667"
+          Id="Package\Truncate Sales Transaction"
+          TopLeft="5.5,5.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="108.833333333333,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.2499996833503,41.2833323686322"
+              Start="0,0"
+              End="-9.2499996833503,33.7833323686322">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.6416661843161" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.6416661843161"
+                    Point2="0,20.6416661843161"
+                    Point3="-4,20.6416661843161" />
+                  <mssgle:LineSegment
+                    End="-5.2499996833503,20.6416661843161" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.2499996833503,20.6416661843161"
+                    Point2="-9.2499996833503,20.6416661843161"
+                    Point3="-9.2499996833503,24.6416661843161" />
+                  <mssgle:LineSegment
+                    End="-9.2499996833503,33.7833323686322" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="99.583333649983,132.116665701966">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.5416668622444,28.2833326010903"
+              Start="0,0"
+              End="25.5416668622444,20.7833326010903">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.1416663005451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.1416663005451"
+                    Point2="0,14.1416663005451"
+                    Point3="4,14.1416663005451" />
+                  <mssgle:LineSegment
+                    End="21.5416668622444,14.1416663005451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.5416668622444,14.1416663005451"
+                    Point2="25.5416668622444,14.1416663005451"
+                    Point3="25.5416668622444,18.1416663005451" />
+                  <mssgle:LineSegment
+                    End="25.5416668622444,20.7833326010903" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="125.125000512227,203.066664969722">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19.2916662103186,25.0333326592048"
+              Start="0,0"
+              End="-19.2916662103186,17.5333326592048">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.51666632960239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.51666632960239"
+                    Point2="0,12.5166663296024"
+                    Point3="-4,12.5166663296024" />
+                  <mssgle:LineSegment
+                    End="-15.2916662103186,12.5166663296024" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15.2916662103186,12.5166663296024"
+                    Point2="-19.2916662103186,12.5166663296024"
+                    Point3="-19.2916662103186,16.5166663296024" />
+                  <mssgle:LineSegment
+                    End="-19.2916662103186,17.5333326592048" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load Sales Transaction">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Load Sales Transaction\Row Count"
+          TopLeft="31.7500000558794,88.1499990585447" />
+        <NodeLayout
+          Size="226.666666666667,42.6666666666667"
+          Id="Package\Load Sales Transaction\Load Sales Transaction Staging"
+          TopLeft="32.375000493601,233.849996989667" />
+        <NodeLayout
+          Size="198.666666666667,42.6666666666667"
+          Id="Package\Load Sales Transaction\Extract Sales Transaction"
+          TopLeft="5.5,5.5" />
+        <EdgeLayout
+          Id="Package\Load Sales Transaction.Paths[OLE DB Source Output]"
+          TopLeft="101.12500002794,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.983332391878"
+              Start="0,0"
+              End="0,32.483332391878">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.483332391878" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Sales Transaction.Paths[Row Count Output 1]"
+          TopLeft="97.416666722546,130.816665725211">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.2916671043883,103.033331264456"
+              Start="0,0"
+              End="48.2916671043883,95.5333312644561">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.516665632228" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.516665632228"
+                    Point2="0,51.516665632228"
+                    Point3="4,51.516665632228" />
+                  <mssgle:LineSegment
+                    End="44.2916671043883,51.516665632228" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.2916671043883,51.516665632228"
+                    Point2="48.2916671043883,51.516665632228"
+                    Point3="48.2916671043883,55.516665632228" />
+                  <mssgle:LineSegment
+                    End="48.2916671043883,95.5333312644561" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Sales Transaction\Load Sales Transaction Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Sales Transaction\Extract Sales Transaction">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

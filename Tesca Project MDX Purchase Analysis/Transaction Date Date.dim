@@ -1,0 +1,337 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d52ddd0d-3290-477f-9233-6f2562023ea5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Transaction Date Date</ID>
+  <Name>Transaction Date Date</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1065" scrolltop="-3894" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6509" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Transaction Date" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4339" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f310000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_dimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1065</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3894</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cdc31ecd-7b6a-4669-b514-df06e6a60f04">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="7966baf7-1f57-4a09-b745-a656f7eb7367">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="8b9fef10-2e79-4c86-a197-7795a8a41d9b">
+      <ID>Datekey</ID>
+      <Name>Datekey</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a26d4de3-21ef-4881-974f-4bcccc84cb44">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a9eb3e3-aa70-4635-a1c0-8bbe4ba53cc9">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>datekey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6ca935f8-bbb4-4eb9-af85-00f01865bb6f">
+          <AttributeID>Calendar Date</AttributeID>
+          <Name>Transaction Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d2e11d6-a27c-4d4f-8832-dcc61464fbfd">
+          <AttributeID>Calendar Year</AttributeID>
+          <Name>Transaction Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2e5142b-e6f3-4034-8e22-1abba0a45221">
+          <AttributeID>Calendar Quarter</AttributeID>
+          <Name>Transaction Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="74c1b871-d85a-4f7f-ac89-d676a67536f0">
+          <AttributeID>Calendar Month</AttributeID>
+          <Name>Transaction Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="19f2abfa-dbc1-4b11-8b91-cd8c74188321">
+          <AttributeID>Calendar English Month</AttributeID>
+          <Name>Transaction English Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9e0712a-c221-4e22-a7cc-9c065abb2137">
+          <AttributeID>Calendar Day</AttributeID>
+          <Name>Transaction Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="247a740c-82c7-48e8-8173-35491ca1c30f">
+          <AttributeID>Calendar English Day</AttributeID>
+          <Name>Transaction English Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="03a3ae8c-fe56-41c9-81d8-debed2dce639">
+          <AttributeID>Calendar Week</AttributeID>
+          <Name>Transaction Week</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="40eddd1a-245a-4227-815a-5ff407cf4c84">
+          <AttributeID>Calendar Dayof Year</AttributeID>
+          <Name>Transaction Day of Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7586e82f-1d97-469c-8760-7fac6a5fb5e5">
+      <ID>Calendar Date</ID>
+      <Name>Transaction Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eeccc697-d879-42f9-a717-6bd3f29e325c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e86fe4c2-6e6b-4148-9b07-360fe10f6c09">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d2453f7-f3c3-4e65-bc2a-c4d74c5286e0">
+      <ID>Calendar Year</ID>
+      <Name>Transaction Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="98868e74-64e2-4d21-8c5c-5152be0e5452">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07b26f69-89ef-48b1-8c14-477c1adac561">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88cc7ede-62e6-4df7-bcd2-0c0f60978153">
+      <ID>Calendar Quarter</ID>
+      <Name>Transaction Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="84858023-a32e-45d4-b2ea-93b802022c30">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36cb3742-eef0-450f-b24f-4bc533a5319c">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e9d8654-d06c-4918-9312-d7571e94964d">
+      <ID>Calendar Month</ID>
+      <Name>Transaction Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2204411f-df58-4e9c-a036-4d61aa7480b2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04bc3d88-90f9-484c-8b82-f6f18d36ae58">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7fcf72b6-efd5-4991-a7f4-0daaa7d992b0">
+      <ID>Calendar English Month</ID>
+      <Name>Transaction English Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f73050b-6a1a-42c3-8be1-cc9f4fd40d32">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0de658ad-f9d0-4b73-acad-1d32b5ee8e7f">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarEnglishMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="29556488-5f9c-4fb0-a0fd-f9f2adcd3e4c">
+      <ID>Calendar Day</ID>
+      <Name>Transaction Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a8dd0a7-8a70-43c2-918e-c50417fa8f03">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4140c1a-4934-43b0-973c-0863dc8a0343">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>calendarDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c2651c8-75cf-4770-ad44-918e31cdcd11">
+      <ID>Calendar English Day</ID>
+      <Name>Transaction English Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9da08d4-52be-4475-9a89-0f9d6dccfcf1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11f43e97-1bd8-4329-84a4-b764ced3da3b">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarEnglishDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66c00add-4eee-458a-af3e-56d839c888b8">
+      <ID>Calendar Week</ID>
+      <Name>Transaction Week</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0545c72b-0772-4b51-88c1-d67a999dc3e1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10518ce6-adfa-4033-86bd-834a99c548f7">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40bdd696-c344-4858-95e7-01d7db608761">
+      <ID>Calendar Dayof Year</ID>
+      <Name>Transaction Day of Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2d07c63c-fc77-462b-8d20-b4bce6c5eea7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d27473c-4d27-4b47-bfce-808bd4508b3b">
+            <TableID>TescaEdw_dimDate</TableID>
+            <ColumnID>CalendarDayofYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="f81b0915-85a2-4f51-9568-e11006b9b113">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="8fa50f76-f371-4fd5-8bac-65c8fe86e2cf">
+          <ID>Datekey</ID>
+          <Name>Datekey</Name>
+          <SourceAttributeID>Datekey</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fc14bc09-c393-4630-91af-ef757ad84276">
+          <ID>Transaction Day</ID>
+          <Name>Transaction Day</Name>
+          <SourceAttributeID>Calendar Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="64afd1bb-a1df-4ea8-9dcf-c7cf8d17ccfd">
+          <ID>Transaction Date</ID>
+          <Name>Transaction Date</Name>
+          <SourceAttributeID>Calendar Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="15b0ac83-feb9-4346-96cf-3f89c7d64274">
+          <ID>Transaction Day of Year</ID>
+          <Name>Transaction Day of Year</Name>
+          <SourceAttributeID>Calendar Dayof Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1b93e8b5-302d-4ff6-bada-3867818f4eeb">
+          <ID>Transaction Week</ID>
+          <Name>Transaction Week</Name>
+          <SourceAttributeID>Calendar Week</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="173e7c32-9bdd-4d79-8067-af514157a220">
+          <ID>Transaction Month</ID>
+          <Name>Transaction Month</Name>
+          <SourceAttributeID>Calendar Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="56e4a25e-1456-4622-9b59-6675c226f7a3">
+          <ID>Transaction Quarter</ID>
+          <Name>Transaction Quarter</Name>
+          <SourceAttributeID>Calendar Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="35d9f49b-9d53-45af-9c10-2953470181cd">
+          <ID>Transaction Year</ID>
+          <Name>Transaction Year</Name>
+          <SourceAttributeID>Calendar Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6bf53fcf-450d-41ea-bdf8-7a9243c095e6">
+          <ID>Transaction English Day</ID>
+          <Name>Transaction English Day</Name>
+          <SourceAttributeID>Calendar English Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d821a056-ef24-4357-9ed5-525b4ba469b2">
+          <ID>Transaction English Month</ID>
+          <Name>Transaction English Month</Name>
+          <SourceAttributeID>Calendar English Month</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

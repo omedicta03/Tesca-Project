@@ -1,0 +1,725 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer ONOMEBENIMDX Tesca EDW",
+        "connectionString": "Provider=SQLNCLI11;Data Source=ONOME\\BENIMDX;Initial Catalog=Tesca EDW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "onomeitimi@gmail.com",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Start Overtime Date",
+        "columns": [
+          {
+            "name": "datekey",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "datekey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Calendar Date",
+            "dataType": "dateTime",
+            "sourceColumn": "CalendarDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Start Overtime Calendar Year",
+            "dataType": "int64",
+            "sourceColumn": "CalendarYear",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Calendar Quarter",
+            "dataType": "string",
+            "sourceColumn": "CalendarQuarter",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar Month",
+            "dataType": "int64",
+            "sourceColumn": "CalendarMonth",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Calendar EnglishMonth",
+            "dataType": "string",
+            "sourceColumn": "CalendarEnglishMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar IboMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarIboMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar PortugeseMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarPortugeseMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar ArabicMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarArabicMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar FrenchMonth",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarFrenchMonth",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar Day",
+            "dataType": "int64",
+            "sourceColumn": "calendarDay",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Calendar EnglishDay",
+            "dataType": "string",
+            "sourceColumn": "CalendarEnglishDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar IboDay",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarIboDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar PortugeseDay",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarPortugeseDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar ArabicDay",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarArabicDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar FrenchDay",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "CalendarFrenchDay",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Calendar Week",
+            "dataType": "int64",
+            "sourceColumn": "CalendarWeek",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Calendar Day of Year",
+            "dataType": "int64",
+            "sourceColumn": "CalendarDayofYear",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveStartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dimDate",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[dimDate].* FROM [TescaEdw].[dimDate] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[dimDate].* FROM [TescaEdw].[dimDate] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dimDate"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Employee Information",
+        "columns": [
+          {
+            "name": "Employee_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Employee_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EmployeeId",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "EmployeeId",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Employee No",
+            "dataType": "string",
+            "sourceColumn": "EmployeeNo",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Employee Name",
+            "dataType": "string",
+            "sourceColumn": "EmployeeName",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Date of Birth",
+            "dataType": "dateTime",
+            "sourceColumn": "DateofBirth",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Marital Status",
+            "dataType": "string",
+            "sourceColumn": "MaritalStatus",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectiveDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "EffectiveEndDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectiveEndDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimEmployee",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimEmployee].* FROM [TescaEdw].[DimEmployee] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimEmployee].* FROM [TescaEdw].[DimEmployee] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimEmployee"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Start overtime Hour",
+        "columns": [
+          {
+            "name": "hour_sk",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "hour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime 24Hr",
+            "dataType": "int64",
+            "sourceColumn": "hour24",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime 12hr",
+            "dataType": "int64",
+            "sourceColumn": "hour12",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Start Overtime Operation Hours",
+            "dataType": "string",
+            "sourceColumn": "hourAP",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Period of Day",
+            "dataType": "string",
+            "sourceColumn": "Periodofday",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Start Overtime Business Hour",
+            "dataType": "string",
+            "sourceColumn": "BusinessHour",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "EffectivestartDate",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "EffectivestartDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimHour",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[DimHour].* FROM [TescaEdw].[DimHour] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[DimHour].* FROM [TescaEdw].[DimHour] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DimHour"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "Human Resource Overtime",
+        "isHidden": true,
+        "columns": [
+          {
+            "name": "Overtime_SK",
+            "dataType": "int64",
+            "sourceColumn": "Overtime_SK",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Employee_sk",
+            "dataType": "int64",
+            "sourceColumn": "Employee_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "StartOvertimeDate_sk",
+            "dataType": "int64",
+            "sourceColumn": "StartOvertimeDate_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "StartOvertimeHour_sk",
+            "dataType": "int64",
+            "sourceColumn": "StartOvertimeHour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EndOvertimeDate_sk",
+            "dataType": "int64",
+            "sourceColumn": "EndOvertimeDate_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "EndOvertimeHour_sk",
+            "dataType": "int64",
+            "sourceColumn": "EndOvertimeHour_sk",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OvertimeHour",
+            "dataType": "int64",
+            "sourceColumn": "OvertimeHour",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LoadDate",
+            "dataType": "dateTime",
+            "sourceColumn": "LoadDate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_Overtime",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [TescaEdw].[fact_Overtime].* FROM [TescaEdw].[fact_Overtime] ",
+              "dataSource": "SqlServer ONOMEBENIMDX Tesca EDW"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total EndOvertime Hours",
+            "expression": " sum('Human Resource Overtime'[EndOvertimeHour_sk])"
+          },
+          {
+            "name": "Total StartOvertime Hours",
+            "expression": "sum('Human Resource Overtime'[StartOvertimeHour_sk])"
+          },
+          {
+            "name": "Total Overtime Hours",
+            "expression": "sum('Human Resource Overtime'[OvertimeHour])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [TescaEdw].[fact_Overtime].* FROM [TescaEdw].[fact_Overtime] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fact_Overtime"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "TescaEdw"
+          }
+        ]
+      },
+      {
+        "name": "End Overtime Date",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "datekey",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[datekey]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Date",
+            "dataType": "dateTime",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Date]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Quarter",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Quarter]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Month",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Month]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar EnglishMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar EnglishMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar IboMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar IboMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar PortugeseMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar PortugeseMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar ArabicMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar ArabicMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar FrenchMonth",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar FrenchMonth]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Day",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar EnglishDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar EnglishDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar IboDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar IboDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar PortugeseDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar PortugeseDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar ArabicDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar ArabicDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar FrenchDay",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar FrenchDay]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Week",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Week]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Calendar Day of Year",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start Overtime Date[Start Overtime Calendar Day of Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectiveStartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start Overtime Date[EffectiveStartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Start Overtime Date'"
+            }
+          }
+        ]
+      },
+      {
+        "name": "End Overtime Hour",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "hour_sk",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start overtime Hour[hour_sk]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime 24Hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start overtime Hour[Start Overtime 24Hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime 12hr",
+            "dataType": "int64",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start overtime Hour[Start Overtime 12hr]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Operation Hours",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start overtime Hour[Start Overtime Operation Hours]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Period of Day",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start overtime Hour[Start Overtime Period of Day]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "End Overtime Business Hour",
+            "dataType": "string",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "Start overtime Hour[Start Overtime Business Hour]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "EffectivestartDate",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "Start overtime Hour[EffectivestartDate]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "'Start overtime Hour'"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "7ed8985f-c2a0-4802-b548-fd8a25c59542",
+        "fromTable": "Human Resource Overtime",
+        "fromColumn": "StartOvertimeDate_sk",
+        "toTable": "Start Overtime Date",
+        "toColumn": "datekey"
+      },
+      {
+        "name": "a4a30ec7-e7cc-47d6-af4e-515eb853f74b",
+        "fromTable": "Human Resource Overtime",
+        "fromColumn": "Employee_sk",
+        "toTable": "Employee Information",
+        "toColumn": "Employee_sk"
+      },
+      {
+        "name": "2f4a9261-90bf-408a-909c-76f896529197",
+        "fromTable": "Human Resource Overtime",
+        "fromColumn": "StartOvertimeHour_sk",
+        "toTable": "Start overtime Hour",
+        "toColumn": "hour_sk"
+      },
+      {
+        "name": "8267f5af-d1ed-4001-96eb-875a49b4323e",
+        "fromTable": "Human Resource Overtime",
+        "fromColumn": "EndOvertimeDate_sk",
+        "toTable": "End Overtime Date",
+        "toColumn": "datekey"
+      },
+      {
+        "name": "459fa6cc-3fcd-4d48-9ee1-13b797bfb72d",
+        "fromTable": "Human Resource Overtime",
+        "fromColumn": "EndOvertimeHour_sk",
+        "toTable": "End Overtime Hour",
+        "toColumn": "hour_sk"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

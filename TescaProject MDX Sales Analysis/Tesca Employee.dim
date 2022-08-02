@@ -1,0 +1,266 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9445684d-6715-44af-af33-7d64027d5b3f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tesca Employee</ID>
+  <Name>Tesca Employee</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1532" scrolltop="-4569" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6403" y="12788" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tesca Employee" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3298" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20c0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="TescaEdw_DimEmployee" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1532</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4569</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8ddcde95-bdb5-430c-9434-bcb677e81325">
+    <DataSourceViewID>Tesca EDW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="60b2cd92-abf7-4436-95e7-bef96555ac2c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7be13376-3f69-48c6-99d3-b17ecb618b78">
+      <ID>Employee Sk</ID>
+      <Name>Employee Sk</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>839</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a1f44f4-1ccc-48e4-9cd8-a5af7e47629d">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a850b3f-f363-43d3-8958-b5270475b826">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>Employee_sk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="348f4fe9-0f75-41da-b877-e8c17b61412a">
+          <AttributeID>Employee No</AttributeID>
+          <Name>Employee No</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c35e772-0b91-426e-a99b-b95e858472a1">
+          <AttributeID>Employee Name</AttributeID>
+          <Name>Employee Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5159e129-d08f-472b-b92d-092a7e88e952">
+          <AttributeID>Dateof Birth</AttributeID>
+          <Name>Date of Birth</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6455a74-249a-4466-a788-b02bcaaa227b">
+          <AttributeID>Marital Status</AttributeID>
+          <Name>Marital Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="107bfe91-2c84-4bc1-a4e8-240ba5841e2d">
+          <AttributeID>Effective Date</AttributeID>
+          <Name>Effective Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46878410-fe0a-4366-bd5d-d0b732ce5ba6">
+          <AttributeID>Effective End Date</AttributeID>
+          <Name>Effective End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88dd5d52-e28e-468d-ad40-9c88e2e4adb7">
+      <ID>Employee No</ID>
+      <Name>Employee No</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14148a69-bfa1-442b-a279-d764a76e2799">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b0b71c9-4a51-4482-b4da-ad00defb33cd">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>EmployeeNo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="97f84ea2-8dec-4a26-9fca-dcf54ac2eb88">
+      <ID>Employee Name</ID>
+      <Name>Employee Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1644951f-5ca1-4401-9b2f-2029bbb942b9">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a733ed54-6d96-410b-8829-a40f1f10c565">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>EmployeeName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2eafaf65-df2d-4ebe-9cea-21e15fb32534">
+      <ID>Dateof Birth</ID>
+      <Name>Date of Birth</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="818a1674-7510-4cfa-84a0-b38aa4aa5118">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4785824b-eee4-44a4-9b6b-b191c720dc4e">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>DateofBirth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c4a3a4e8-7daf-4da8-9163-bcdda0985f6f">
+      <ID>Marital Status</ID>
+      <Name>Marital Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c304f25-9d23-4042-a5cd-076e94988a43">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd4850fc-8d7c-425f-badb-b25aa5c8eedf">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>MaritalStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="022d3cf9-2dae-49b6-91f5-23b39be72cb9">
+      <ID>Effective Date</ID>
+      <Name>Effective Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="919ae8b6-a2b0-4989-b3fc-7c9b379fec3f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acaa68ce-168e-4479-982a-3a16758c2775">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>EffectiveDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e81c822-36e8-40ec-9ded-11bf75119886">
+      <ID>Effective End Date</ID>
+      <Name>Effective End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8773ff79-866d-41b1-aece-d79da2e40d61">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eedf638e-7898-4d54-a483-c119bbbe598a">
+            <TableID>TescaEdw_DimEmployee</TableID>
+            <ColumnID>EffectiveEndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="8adc1716-8b16-43fc-9abc-4f83b8507f1a">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="e0f04a96-2d88-497d-994f-e9c1d38c2ca5">
+          <ID>Employee Sk</ID>
+          <Name>Employee Sk</Name>
+          <SourceAttributeID>Employee Sk</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c81abb84-97cd-4c9b-a312-10d03f27be71">
+          <ID>Employee No</ID>
+          <Name>Employee No</Name>
+          <SourceAttributeID>Employee No</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5d6221f6-1278-4669-a84c-8b57b92bdeef">
+          <ID>Employee Name</ID>
+          <Name>Employee Name</Name>
+          <SourceAttributeID>Employee Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ccf34868-407a-487f-806f-76a0626319fb">
+          <ID>Date of Birth</ID>
+          <Name>Date of Birth</Name>
+          <SourceAttributeID>Dateof Birth</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c744299e-c36b-4158-a727-906b15e751ec">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceAttributeID>Marital Status</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0d4f978c-a802-4e3e-97ec-17da43262df2">
+          <ID>Effective Start Date</ID>
+          <Name>Effective Start Date</Name>
+          <SourceAttributeID>Effective Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4a4d35d6-f733-4092-90b2-d894e3da6fa3">
+          <ID>Effective End Date</ID>
+          <Name>Effective End Date</Name>
+          <SourceAttributeID>Effective End Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
