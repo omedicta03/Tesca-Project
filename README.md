@@ -27,6 +27,6 @@ This repository contains a project on building a Data warehouse for a grocery ch
 10. Sales Manager needs to know what are the most demanding products for each time period of the day
 
 ❑ Deliverables:
-▪ You are required to build an Enterprise Data ware housing that addresses the analytic requirements
-▪ Build Data Mart Cubes for functional areas based on the analytic requirements using SQL Server Analysis services (Using both Multidimensional and Tabular Models)
-▪ Using Tableau and Power BI to design Data Visualisations for business users and management to enable informed decisions
+▪ i designed an Enterprise Data ware housing that addresses the analytic requirements
+▪ Built Data Mart Cubes for functional areas based on the analytic requirements using SQL Server Analysis services (Using both Multidimensional and Tabular Models)
+▪ Used Tableau and Power BI to design Data Visualisations for business users and management to enable informed decisions
