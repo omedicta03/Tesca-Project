@@ -1,32 +1,69 @@
-# Tesca-Project
- Enterprise-Data-Warehouse
-This repository contains a project on building a Data warehouse for a grocery chain store.
+# End-to-End Grocery Chain Data Warehouse Project
 
-❑ Background:
+## **Overview**
+This project involves the design and implementation of an **Enterprise Data Warehouse (EDW)** for a large grocery chain with 830 stores across 74 states. The goal was to consolidate transactional and operational data to enable advanced analytics, facilitate performance improvements, and support decision-making processes at all organizational levels.
 
-▪ This Grocery chain consists of 830 stores in 74 states
-▪ Distribute products received from certified vendors to stores
-▪ Stores 40 products in 7 departments, such as frozen foods and diary
-▪ Bar codes are scanned directly into the cash registers’ POS System by Sales person
-▪ Sales Products are promoted via coupons, temporary price reductions, ads, and in store promotions
-▪ Purchasing department received products from vendor
-▪ Sales Persons overtime hours are captured in Excel by Sales Manager
-▪ Backup of the Tesca Grocery Chain Transaction Processing System has been provided to me
-▪ Database Administrator has granted full administrative privileges on both Analysis and Relational Database Instances
+The grocery chain manages **40 product categories** across 7 departments (e.g., Frozen Foods, Dairy). Data collected from Point of Sale (POS) systems, vendor transactions, and sales promotions were analyzed to meet business and analytical needs.
 
-❑ Analytic Requirements:
-1. Need to know what is selling in the stores each day to evaluate product movement, as well as to see how sales are impacted by promotions
-2. Need to understand the mix of products in a customer’s market basket
-3. Changes to Point of Sales Device on each channel are recorded to know the frequency of channel POS device replacement
-4. Need to understand the most ordered products from each Vendor in each store
-5. The management decided to track changes to vendor information to determine the impact on the delivery services
-6. Sales Manager is interested to know the effects of product rebranding on Sales
-7. Human Resources Management needs to know the effects of changes to marital status on salesperson’s overtime hours
-8. Needs to perform sales analysis on overall product brand sales and rebrand product sales
-9. Purchasing Manager needs to know the efficient vendors based on differential days between order date and delivery date
-10. Sales Manager needs to know what are the most demanding products for each time period of the day
+---
 
-❑ Deliverables:
-▪ Designed an Enterprise Data ware house that addresses the analytic requirements
-▪ Built Data Mart Cubes for functional areas based on the analytic requirements using SQL Server Analysis services (Using both Multidimensional and Tabular Models)
-▪ Used Tableau and Power BI to design Data Visualisations for business users and management to enable informed decisions
+## **Key Features**
+
+### **Analytical Objectives**
+- **Sales Analysis:** Track daily product movement and evaluate sales impact due to promotions such as coupons, temporary price reductions, ads, and in-store campaigns.
+- **Market Basket Analysis:** Understand product combinations in a customer’s basket.
+- **Vendor Performance:** Determine the most efficient vendors based on order delivery times and analyze the impact of changes to vendor information on delivery services.
+- **Product Insights:** Monitor the most ordered products from vendors across stores and analyze effects of product rebranding.
+- **POS Device Tracking:** Record POS device changes and replacement frequency.
+- **Overtime Analysis:** Evaluate the impact of salespersons’ marital status changes on overtime hours.
+- **Demand Analysis:** Identify the most demanding products during various time periods of the day.
+
+---
+
+## **Project Deliverables**
+- **Enterprise Data Warehouse Design:** 
+  - Designed a comprehensive EDW using SQL Server.
+  - Integrated transactional data (POS systems, vendor purchases, promotions) into a centralized repository.
+- **Data Mart Development:** 
+  - Built data marts for functional areas (e.g., sales, purchasing, HR).
+  - Implemented cubes using SQL Server Analysis Services (SSAS) with both Multidimensional and Tabular models.
+- **ETL Processes:**
+  - Developed ETL pipelines using SQL Server Integration Services (SSIS) to extract, transform, and load data from multiple sources.
+  - Ensured data quality and consistency through validation mechanisms.
+- **Data Visualizations:**
+  - Designed interactive dashboards and reports in **Tableau** and **Power BI**.
+  - Delivered insights into sales trends, vendor performance, and product demand.
+
+---
+
+## **Technical Components**
+
+### **Database Architecture**
+- **Source Systems:** POS systems, vendor records, sales data from Excel sheets.
+- **Integration Layer:** ETL processes for consolidating and transforming data.
+- **Data Warehouse:** Centralized storage using SQL Server.
+- **Data Marts:** Sales, Purchasing, and HR data marts optimized for querying.
+
+### **Data Modeling**
+- **Star Schema:** Fact tables (e.g., SalesFact, VendorFact) linked to dimension tables (e.g., ProductDim, StoreDim, TimeDim).
+- **Slowly Changing Dimensions (SCD):** Implemented using SSIS to capture historical changes, such as vendor updates.
+
+### **Visualization Tools**
+- **Power BI:** Developed dashboards for sales analysis and vendor efficiency.
+- **Tableau:** Created visualizations for market basket analysis and product movement trends.
+
+---
+
+## **Outcomes**
+- Enabled daily sales tracking to assess product performance and promotional impacts.
+- Improved understanding of customer purchasing patterns through market basket analysis.
+- Provided actionable insights on vendor performance and delivery efficiency.
+- Enhanced decision-making through intuitive and interactive dashboards.
+
+---
+
+## **Contact Information**
+This project was executed by **Benedicta Odhegba**. For inquiries or contributions, feel free to reach out.
+
+**Email:** onomeitimi@gmail.com  
+**GitHub Portfolio:** [omedicta03](https://github.com/omedicta03)  
